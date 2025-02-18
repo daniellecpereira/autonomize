@@ -6,7 +6,9 @@
 
 `Segundo Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Atualmente, não é fácil encontrar no mercado um Sistema ERP de baixo custo que atenda vendedores autônomos ou pequenos empreendedores, que, por sua vez, precisam manter o estoque de seus produtos, controlar o capital, entre outras necessidades.
+
+O Autonomize visa facilitar a vida desses pequenos empreendedores, oferecendo um Sistema ERP Web de baixo custo, que permite o controle de estoque, controle de caixa, entre outras soluções.
 
 ## Integrantes
 
