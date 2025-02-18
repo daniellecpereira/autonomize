@@ -1,27 +1,21 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Com o crescimento do empreendedorismo e do trabalho autônomo, muitos profissionais enfrentam desafios na gestão de seus negócios. A falta de ferramentas acessíveis e intuitivas para controle financeiro e de estoque pode levar a dificuldades na organização, impactando diretamente a lucratividade e a sustentabilidade do negócio.
+Em um cenário cada vez mais competitivo, a eficiência operacional e a gestão estruturada são fatores determinantes para o sucesso de qualquer empreendimento. No entanto, muitos autônomos acabam utilizando métodos manuais, como planilhas ou anotações físicas, que podem ser imprecisos e trabalhosos, dificultando a tomada de decisões estratégicas. A ausência de um controle adequado pode resultar em desperdício de recursos, desorganização financeira e até mesmo prejuízos que comprometem o crescimento do negócio.
+Além disso, a maioria dos softwares de gestão disponíveis no mercado são desenvolvidos para empresas de médio e grande porte, apresentando interfaces complexas e custos elevados, tornando-se inacessíveis para pequenos empreendedores. 
+Diante dessa necessidade, surge a proposta do Autonomize, uma plataforma ERP voltada especificamente para autônomos e pequenos empreendedores. O sistema busca oferecer uma solução simples, intuitiva e acessível, permitindo que profissionais independentes possam gerenciar seu estoque e acompanhar suas finanças com mais clareza e eficiência. Dessa forma, o Autonomize pretende preencher essa lacuna no mercado, proporcionando maior controle, previsibilidade e sustentabilidade para negócios de pequeno porte.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A falta de um sistema de planejamento de recursos empresariais adequado é um grande desafio para autônomos e pequenos empreendedores. A desorganização na gestão financeira e de estoque pode comprometer a sustentabilidade do negócio, dificultando seu crescimento e reduzindo sua competitividade no mercado. Nesse contexto, o Autonomize surge como uma solução acessível e eficiente, proporcionando um controle mais estruturado das finanças e do estoque. Com uma abordagem intuitiva, a plataforma facilita a análise de dados essenciais, auxiliando na tomada de decisões estratégicas e garantindo uma administração mais organizada.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Desenvolver uma plataforma ERP acessível e intuitiva para autônomos.
+- Oferecer funcionalidades de controle de estoque e acompanhamento financeiro.
+- Proporcionar uma visão clara sobre as finanças do negócio, auxiliando na tomada de decisões.
+- Facilitar a organização de produtos e serviços, evitando desperdícios e prejuízos.
 
 ## Justificativa
 
@@ -34,10 +28,11 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+PÚBLICO-ALVO  
+O sistema será voltado para autônomos e microempreendedores que precisam de uma ferramenta prática para gerenciar suas operações. Isso inclui profissionais como:
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+- Revendedores autônomos
+- Artesãos
+- Prestadores de serviço
+- Comerciantes de pequeno porte
+- Pequenos produtores
