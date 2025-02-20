@@ -10,10 +10,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
 
+
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/c68b1d6eff6adff121fbcfbab58807eda6cbe09b/docs/personas/GeovanaPaula-Persona.jpg" alt="Persona1"/>
+
+<h3><p align="center"><b>Persona 01</b></p></h2></br>
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/c68b1d6eff6adff121fbcfbab58807eda6cbe09b/docs/personas/LucasAndrade-Persona.jpg" alt="Persona2"/>
 
+<h3><p align="center"><b>Persona 02</b></p></h2></br>
 
 ## Histórias de Usuários
 
@@ -25,7 +29,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Geovana Paula       | Saber quanto de lucro obteve naquele mês de vendas.                 | Ter um controle maior de gastos dentro do orçamento para o próximo mês. |
 |Lucas Andrade       | Acompanhar minhas entradas e saídas financeiras com clareza.                 | Saber exatamente quanto estou lucrando a cada mês. |
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
-
 
 ## Requisitos
 
@@ -98,3 +101,4 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Lucidchart](https://www.lucidchart.com/)
 > - [Astah](https://astah.net/)
 > - [Diagrams](https://app.diagrams.net/)
+
