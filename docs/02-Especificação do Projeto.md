@@ -10,22 +10,10 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
 
-Utilize também como referência o exemplo abaixo:
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/c68b1d6eff6adff121fbcfbab58807eda6cbe09b/docs/personas/GeovanaPaula-Persona.jpg" alt="Persona1"/>
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/c68b1d6eff6adff121fbcfbab58807eda6cbe09b/docs/personas/LucasAndrade-Persona.jpg" alt="Persona2"/>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -33,17 +21,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Geovana Paula  | Visualizar qual produto gera mais vendas em determinados momentos do ano. | Produzir mais desses para  manter em estoque antes desta época do ano entrar.|
+|Geovana Paula       | Saber quanto de lucro obteve naquele mês de vendas.                 | Ter um controle maior de gastos dentro do orçamento para o próximo mês. |
 
 ## Requisitos
 
@@ -54,18 +33,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| A aplicação deve permitir que os usuários realizem cadastro do seu perfil. | ALTA | 
-|RF-002| A aplicação deve permitir que     | ALTA |
-|RF-003| A aplicação deve permitir que  | ALTA |
-|RF-004| A aplicação deve gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. | ALTA | 
-|RF-005| A aplicação deve permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | ALTA | 
+|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
+|RF-003|  O sistema deverá permitir que o usuário realize a entrada e saída de produtos. | ALTA |
+|RF-004|  O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. | ALTA |
+|RF-005|  O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. | ALTA |
+|RF-006|  O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | ALTA |
+|RF-007|  | ALTA |
+|RF-008|  | ALTA |
+|RF-009|  | ALTA |
+|RF-010|  | ALTA |
+
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve apresentar uma interface intuitiva que permita ao usuário verificar informações de seu estoque e controle de caixa de forma clara. | ALTA | 
+|RNF-002| O sistema deve ter design responsivo para que se adapte a diferentes tamanhos de telas. |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
