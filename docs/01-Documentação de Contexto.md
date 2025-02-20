@@ -38,4 +38,3 @@ O sistema será voltado para autônomos e microempreendedores que precisam de um
 - Artesãos
 - Prestadores de serviço
 - Comerciantes de pequeno porte
-- Pequenos produtores
