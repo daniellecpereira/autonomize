@@ -22,12 +22,9 @@
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A maioria dos sistemas ERP disponíveis no mercado são complexos e voltados para empresas de médio e grande porte. Isso os torna inacessíveis para pequenos empreendedores devido ao custo elevado e à complexidade de uso. O Autonomize surge como uma solução personalizada, simples e eficaz para atender a essa demanda, contribuindo para a profissionalização e o crescimento sustentável de autônomos e microempreendedores. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo. Ou, o grupo poderá consultar e justificar o impacto do problema para o público-alvo por meio de pesquisas em outras fontes. Neste caso, é essencial que todos os dados apresentados estejam acompanhados de suas fontes (conforme padrão ABNT).
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Sendo uma solução simples e de baixo custo, o Automatize visa diminuir a complexidade no uso de ferramentas para gestão, porém, sem prejudicar o desempenho e a utilidade da mesma, tornando-a de uso simples e fácil, um âmbito maior de pessoas poderá utilizá-la para realizar de forma precisa a análise da lucratividade de seu negócio e o controle de informações dos produtos no estoque.
 
 ## Público-Alvo
 
