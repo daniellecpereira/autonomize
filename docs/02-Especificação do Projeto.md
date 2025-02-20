@@ -19,6 +19,10 @@ Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever 
 
 <h3><p align="center"><b>Persona 02</b></p></h2></br>
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/586fd086e60cf6f999c70f869c83a44608054b67/docs/personas/TaniaFigueiredo-Persona.jpg" alt="Persona3">
+
+<h3><p align="center"><b>Persona 03</b></p></h2></br>
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
