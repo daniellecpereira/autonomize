@@ -27,6 +27,14 @@ Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever 
 
 <h3><p align="center"><b>Persona 04</b></p></h2></br>
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/d44a05de6b31d3c17d0c07648abc4fa6b0e852a9/docs/personas/ValdireneSantos-Persona.png" alt="Persona5">
+
+<h3><p align="center"><b>Persona 05</b></p></h2></br>
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/d44a05de6b31d3c17d0c07648abc4fa6b0e852a9/docs/personas/GeraldoPereira-Persona.png" alt="Persona6">
+
+<h3><p align="center"><b>Persona 06</b></p></h2></br>
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
