@@ -18,6 +18,7 @@ O Autonomize visa facilitar a vida desses pequenos empreendedores, oferecendo um
 * Lorrayne Rodrigues Coelho
 * Victor Emanuel Barbosa Barros
 * Danielle Cristina Pereira
+* Marina Murari Silva
 
 ## Orientador
 
