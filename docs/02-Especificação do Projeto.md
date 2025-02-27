@@ -46,7 +46,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Lucas Andrade       | Acompanhar minhas entradas e saídas financeiras com clareza.                 | Saber exatamente quanto estou lucrando a cada mês. |
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
 |Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que nao estou tendo prejuizo e melhor atender meus clientes. |
-
+|Geraldo Pereira| Ter controle da movimentação de catálogo, verificando entradas e saídas de estoque.|Analisar vendas e planejar compras, não vender itens que não houver em estoque. |
 
 ## Requisitos
 
