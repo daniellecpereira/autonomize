@@ -45,6 +45,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Geovana Paula       | Saber quanto de lucro obteve naquele mês de vendas.                 | Ter um controle maior de gastos dentro do orçamento para o próximo mês. |
 |Lucas Andrade       | Acompanhar minhas entradas e saídas financeiras com clareza.                 | Saber exatamente quanto estou lucrando a cada mês. |
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
+|Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que nao estou tendo prejuizo e melhor atender meus clientes. |
+
 
 ## Requisitos
 
