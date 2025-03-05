@@ -63,8 +63,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005|  O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. | ALTA |
 |RF-006|  O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | ALTA |
 |RF-007| O sistema deve permitir a transferência de estoque interna. | BAIXA |
-|RF-008|  | ALTA |
-|RF-009|  | ALTA |
+|RF-008| O sistema deve permitir ver o historico individual de cada produto | ALTA |
+|RF-009| O sistema deve notificar quando o cliente estiver no prazo final de pagamento  | ALTA |
 |RF-010|  | ALTA |
 
 
