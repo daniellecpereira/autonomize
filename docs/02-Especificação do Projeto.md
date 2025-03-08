@@ -44,7 +44,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
 |Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que nao estou tendo prejuizo e melhor atender meus clientes. |
 |Geraldo Pereira| Ter controle da movimentação de catálogo, verificando entradas e saídas de estoque.|Analisar vendas e planejar compras, não vender itens que não houver em estoque. |
-| Geraldo Pereira | Rastrear peças e itens essenciais para manutenção de relógios. | Localizar rapidamente o que precisa durante os reparos.| Geraldo Pereira | Receber alertas quando o estoque de peças específicas estiver baixo. | Fazer pedidos com antecedência e não ficar sem material. | Geraldo Pereira | Garantir que sempre tenha mercadorias para reposição | Atender todos os clientes sem atrasos.
+| Geraldo Pereira | Rastrear peças e itens essenciais para manutenção de relógios. | Localizar rapidamente o que precisa durante os reparos.| 
+| Geraldo Pereira | Receber alertas quando o estoque de peças específicas estiver baixo. | Fazer pedidos com antecedência e não ficar sem material. | 
+| Geraldo Pereira | Garantir que sempre tenha mercadorias para reposição | Atender todos os clientes sem atrasos.
 
 
 ## Requisitos
