@@ -1,4 +1,4 @@
-/# Especificações do Projeto
+|/# Especificações do Projeto
 
 Nestas especificações, visamos ao máximo entender cada persona, com o principal objetivo de criar um sistema, respeitando suas limitações e seja capaz 
 de sanar todas as necessidades voltadas a gestão e controle de vendas/estoque das mesmas.
@@ -66,7 +66,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que os usuários realizem cadastro do seu perfil. | ALTA | 
+|RF-001| A aplicação deve permitir que os usuários realizem cadastro e login do seu perfil. | ALTA | 
 |RF-002|     | ALTA |
 |RF-003|  O sistema deverá permitir que o usuário realize a entrada e saída de produtos. | ALTA |
 |RF-004|  O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. | ALTA |
@@ -86,11 +86,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-001| O sistema deve apresentar uma interface intuitiva que permita ao usuário verificar informações de seu estoque e controle de caixa de forma clara. | ALTA | 
 |RNF-002| O sistema deve ter design responsivo para que se adapte a diferentes tamanhos de telas. | ALTA | 
 |RNF-003| O sistema deve ter compatibilidade em navegadores como chrome, firefox e edge | ALTA | 
-|RNF-004| O sistema deve ter design responsivo para que se adapte a diferentes tamanhos de telas. | ALTA |
-|RNF-005| O sistema deve estar disponivel 99.9% do tempo(podendo ficar indisponível apenas 5horas por ano)| ALTA | 
-|RNF-006| O tempo máximo de aprendizado para um novo usuário deve ser inferior a 1 hora. | ALTA |
-|RNF-007| O sistema deve exigir autenticação por meio de login e senha fortes. | ALTA |
-|RNF-008| O sistema deve responder a qualquer requisição em no máximo 10 segundos. | ALTA |
+|RNF-004| O sistema deve estar disponivel 99.9% do tempo(podendo ficar indisponível apenas 5horas por ano)| ALTA | 
+|RNF-005| O tempo máximo de aprendizado para um novo usuário deve ser inferior a 1 hora. | ALTA |
+|RNF-006| O sistema deve exigir autenticação por meio de login e senha fortes. | ALTA |
+|RNF-007| O sistema deve responder a qualquer requisição em no máximo 10 segundos. | ALTA |
 
 ## Restrições
 
