@@ -1,4 +1,4 @@
-|/# Especificações do Projeto
+## Especificações do Projeto
 
 Nestas especificações, visamos ao máximo entender cada persona, com o principal objetivo de criar um sistema, respeitando suas limitações e seja capaz 
 de sanar todas as necessidades voltadas a gestão e controle de vendas/estoque das mesmas.
@@ -66,16 +66,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que os usuários realizem cadastro e login do seu perfil. | ALTA | 
-|RF-002|     | ALTA |
-|RF-003|  O sistema deverá permitir que o usuário realize a entrada e saída de produtos. | ALTA |
-|RF-004|  O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. | ALTA |
-|RF-005|  O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. | ALTA |
-|RF-006|  O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | ALTA |
-|RF-007| O sistema deve permitir a transferência de estoque interna. | BAIXA |
-|RF-008| O sistema deve permitir ver o historico individual de cada produto | ALTA |
-|RF-009| O sistema deve notificar quando o cliente estiver no prazo final de pagamento  | ALTA |
-|RF-010|  | ALTA |
+|RF-001| A aplicação deve permitir que os usuários realizem cadastro do seu perfil. | ALTA | 
+|RF-002| O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos.   | ALTA |
+|RF-003| O sistema deverá permitir que o usuário realize a entrada e saída de produtos. | ALTA |
+|RF-004| O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. | ALTA |
+|RF-005| O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. | ALTA |
+|RF-006| O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | ALTA |
+|RF-007| O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. | ALTA |
+|RF-008| O sistema deve permitir a transferência de estoque interna. | BAIXA |
+|RF-009| O sistema deve permitir ver o historico individual de cada produto. | ALTA |
+|RF-010| O sistema deve notificar quando o cliente estiver no prazo final de pagamento. | ALTA |
+|RF-011| O sistema deve permitir visualizar quais produtos geram mais vendas em períodos específicos do ano.| MÉDIA |
+|RF-012| O sistema deve permitir o controle de agendamentos e atendimentos aos clientes.  | ALTA |
+|RF-013| O sistema deve permitir a pesquisa avançada no histórico de venda de produtos. | MÉDIA |
+|RF-014| O sistema deve permitir o registro de vendas em tempo real com atualização automática do estoque.| ALTA |
+|RF-015| O sistema deve identificar e alertar sobre produtos próximos do vencimento. | ALTA |
 
 
 
@@ -85,8 +90,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve apresentar uma interface intuitiva que permita ao usuário verificar informações de seu estoque e controle de caixa de forma clara. | ALTA | 
 |RNF-002| O sistema deve ter design responsivo para que se adapte a diferentes tamanhos de telas. | ALTA | 
-|RNF-003| O sistema deve ter compatibilidade em navegadores como chrome, firefox e edge | ALTA | 
-|RNF-004| O sistema deve estar disponivel 99.9% do tempo(podendo ficar indisponível apenas 5horas por ano)| ALTA | 
+|RNF-003| O sistema deve ter compatibilidade em navegadores como chrome, firefox e edge. | ALTA | 
+|RNF-004| O sistema deve estar disponivel 99.9% do tempo(podendo ficar indisponível apenas 5horas por ano).| ALTA | 
 |RNF-005| O tempo máximo de aprendizado para um novo usuário deve ser inferior a 1 hora. | ALTA |
 |RNF-006| O sistema deve exigir autenticação por meio de login e senha fortes. | ALTA |
 |RNF-007| O sistema deve responder a qualquer requisição em no máximo 10 segundos. | ALTA |
@@ -97,9 +102,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-|03| O sistema deve ser desenvolvido usando C# e JavaScript|
+|01| O projeto deverá ser entregue até o final do semestre. |
+|02| Não pode ser desenvolvido um módulo de backend.        |
+|03| O sistema deve ser desenvolvido usando C# e JavaScript.|
 |04| O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados).        |
 
 
