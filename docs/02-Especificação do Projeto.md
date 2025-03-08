@@ -91,10 +91,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-001| O sistema deve apresentar uma interface intuitiva que permita ao usuário verificar informações de seu estoque e controle de caixa de forma clara. | ALTA | 
 |RNF-002| O sistema deve ter design responsivo para que se adapte a diferentes tamanhos de telas. | ALTA | 
 |RNF-003| O sistema deve ter compatibilidade em navegadores como chrome, firefox e edge. | ALTA | 
-|RNF-004| O sistema deve estar disponivel 99.9% do tempo(podendo ficar indisponível apenas 5horas por ano).| ALTA | 
+|RNF-004| O sistema deve estar disponível 99.9% do tempo(podendo ficar disponível apenas 5 horas por ano). | ALTA | 
 |RNF-005| O tempo máximo de aprendizado para um novo usuário deve ser inferior a 1 hora. | ALTA |
 |RNF-006| O sistema deve exigir autenticação por meio de login e senha fortes. | ALTA |
 |RNF-007| O sistema deve responder a qualquer requisição em no máximo 10 segundos. | ALTA |
+|RNF-008| Apenas usuários ADM podem alterar ou excluir registros  do estoque. | ALTA |
+|RNF-009| O sistema deve realizar backup automático dos dados diariamente. | ALTA |
+|RNF-010| O sistema deve permitir a exportação de relatórios em formatos PDF, CSV e Excel. | MÉDIA |
+|RNF-011| O sistema deve manter logs de auditoria para todas as operações críticas. | ALTA |
+|RNF-012| O sistema deve permitir a configuração de parâmetros de alerta por produto. | MÉDIA |
+
 
 ## Restrições
 
