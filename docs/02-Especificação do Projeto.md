@@ -42,15 +42,18 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Geovana Paula       | Saber quanto de lucro obteve naquele mês de vendas.                 | Ter um controle maior de gastos dentro do orçamento para o próximo mês. |
 |Lucas Andrade       | Acompanhar minhas entradas e saídas financeiras com clareza.                 | Saber exatamente quanto estou lucrando a cada mês. |
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
-| Lucas Andrade | Controlar agendamentos de serviços. | Garantir que não perca nenhum compromisso e organize sua agenda.|
-| Lucas Andrade | Evitar desperdícios de materiais. | Otimizar uso e aumentar margens de lucro.|
-|Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que nao estou tendo prejuizo e melhor atender meus clientes. |
+|Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que não estou tendo prejuizo e melhor atender meus clientes. |
 | Tania Figueiredo | Pesquisar histórico de produtos facilmente. | Tomar decisões baseadas em experiências passadas. |
 | Tania Figueiredo | Ferramentas para organizar informações de estoque. | Localizar rapidamente informações específicas.| 
 |Geraldo Pereira| Ter controle da movimentação de catálogo, verificando entradas e saídas de estoque.|Analisar vendas e planejar compras, não vender itens que não houver em estoque. |
 | Geraldo Pereira | Rastrear peças e itens essenciais para manutenção de relógios. | Localizar rapidamente o que precisa durante os reparos.| 
-| Geraldo Pereira | Receber alertas quando o estoque de peças específicas estiver baixo. | Fazer pedidos com antecedência e não ficar sem material. | 
-| Geraldo Pereira | Garantir que sempre tenha mercadorias para reposição | Atender todos os clientes sem atrasos.|
+| Geraldo Pereira | Receber alertas quando o estoque de peças específicas estiver baixo. | Fazer pedidos com antecedência e não ficar sem material. |
+| Geovana | Rastrear quantidade de produtos mais vendidos no estoque. | Manter disponibilidade de produtos populares. |
+| João Silva | Registrar vendas em tempo real. | Ter controle imediato sobre disponibilidade de produtos.|
+| João Silva | Atualizar estoque automaticamente. | Evitar vendas de itens não disponíveis e frustração de clientes. |
+| Valdirene Santos | Controlar estoque de matéria-prima. | Evitar desperdício e garantir produção contínua.|
+| Valdirene Santos | Receber alertas sobre produtos próximos do vencimento. | Criar promoções ou usar ingredientes antes que percam a validade. |
+
 
 
 
