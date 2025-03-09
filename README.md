@@ -2,9 +2,9 @@
 
 `Analise e Desenvolvimento de Sistemas`
 
-`Projeto`
+`Projeto EIXO - 2`
 
-`Segundo Semestre`
+`1° Semestre - 2025`
 
 Atualmente, não é fácil encontrar no mercado um Sistema ERP de baixo custo que atenda vendedores autônomos ou pequenos empreendedores, que, por sua vez, precisam manter o estoque de seus produtos, controlar o capital, entre outras necessidades.
 
