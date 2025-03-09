@@ -37,6 +37,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Geovana Paula  | Visualizar qual produto gera mais vendas em determinados momentos do ano. | Produzir mais desses para  manter em estoque antes desta época do ano entrar.|
 |Geovana Paula       | Saber quanto de lucro obteve naquele mês de vendas.                 | Ter um controle maior de gastos dentro do orçamento para o próximo mês. |
+| Geovana Paula | Rastrear quantidade de produtos mais vendidos no estoque. | Manter disponibilidade de produtos populares. |
 |Lucas Andrade       | Acompanhar minhas entradas e saídas financeiras com clareza.                 | Saber exatamente quanto estou lucrando a cada mês. |
 |Lucas Andrade       | Controlar meus atendimentos e agendamentos de forma prática e rápida.                 | Garantir que não perca nenhum compromisso com meus clientes. |
 |Tania Figueiredo       | Controlar meu estoque de produtos e valores de revenda.                 | Garantir que não estou tendo prejuizo e melhor atender meus clientes. |
@@ -45,7 +46,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Geraldo Pereira| Ter controle da movimentação de catálogo, verificando entradas e saídas de estoque.|Analisar vendas e planejar compras, não vender itens que não houver em estoque. |
 | Geraldo Pereira | Rastrear peças e itens essenciais para manutenção de relógios. | Localizar rapidamente o que precisa durante os reparos.| 
 | Geraldo Pereira | Receber alertas quando o estoque de peças específicas estiver baixo. | Fazer pedidos com antecedência e não ficar sem material. |
-| Geovana | Rastrear quantidade de produtos mais vendidos no estoque. | Manter disponibilidade de produtos populares. |
 | João Silva | Registrar vendas em tempo real. | Ter controle imediato sobre disponibilidade de produtos.|
 | João Silva | Atualizar estoque automaticamente. | Evitar vendas de itens não disponíveis e frustração de clientes. |
 | Valdirene Santos | Controlar estoque de matéria-prima. | Evitar desperdício e garantir produção contínua.|
@@ -78,6 +78,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-013| O sistema deve permitir a pesquisa avançada no histórico de venda de produtos. | MÉDIA |
 |RF-014| O sistema deve permitir o registro de vendas em tempo real com atualização automática do estoque.| ALTA |
 |RF-015| O sistema deve identificar e alertar sobre produtos próximos do vencimento. | ALTA |
+|RF-016| Apenas usuários ADM podem alterar ou excluir registros  do estoque. | ALTA |
 
 
 
@@ -92,11 +93,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| O tempo máximo de aprendizado para um novo usuário deve ser inferior a 1 hora. | ALTA |
 |RNF-006| O sistema deve exigir autenticação por meio de login e senha fortes. | ALTA |
 |RNF-007| O sistema deve responder a qualquer requisição em no máximo 10 segundos. | ALTA |
-|RNF-008| Apenas usuários ADM podem alterar ou excluir registros  do estoque. | ALTA |
-|RNF-009| O sistema deve realizar backup automático dos dados diariamente. | ALTA |
-|RNF-010| O sistema deve permitir a exportação de relatórios em formatos PDF, CSV e Excel. | MÉDIA |
-|RNF-011| O sistema deve manter logs de auditoria para todas as operações críticas. | ALTA |
-|RNF-012| O sistema deve permitir a configuração de parâmetros de alerta por produto. | MÉDIA |
+|RNF-008| O sistema deve realizar backup automático dos dados diariamente. | ALTA |
+|RNF-009| O sistema deve permitir a exportação de relatórios em formatos PDF, CSV e Excel. | MÉDIA |
+|RNF-010| O sistema deve manter logs de auditoria para todas as operações críticas. | ALTA |
+|RNF-011| O sistema deve permitir a configuração de parâmetros de alerta por produto. | MÉDIA |
 
 
 ## Restrições
