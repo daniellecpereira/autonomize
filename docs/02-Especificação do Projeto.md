@@ -117,5 +117,5 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/Diagrama%20de%20caso%20de%20uso.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/Diagrama%20de%20Casos%20de%20Uso.png">
 
