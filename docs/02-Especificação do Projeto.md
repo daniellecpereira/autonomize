@@ -5,9 +5,6 @@ de sanar todas as necessidades voltadas a gestão e controle de vendas/estoque d
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
-
-
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/c68b1d6eff6adff121fbcfbab58807eda6cbe09b/docs/personas/GeovanaPaula-Persona.jpg" alt="Persona1"/>
 
 <h3><p align="center"><b>Persona 01</b></p></h2></br>
