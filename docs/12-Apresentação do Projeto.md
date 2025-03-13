@@ -19,4 +19,5 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 
 ## Conjunto de Slides (Estrutura)
 
-<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/raw/refs/heads/main/AutonomizeApresenta%C3%A7%C3%A3o.mp4">
+https://github.com/user-attachments/assets/ebd60cd6-6b7b-42e0-bcc6-0f1d18588768
+
