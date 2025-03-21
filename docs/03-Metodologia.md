@@ -56,20 +56,24 @@ Para gerenciar e distribuir as tarefas do projeto, a equipe está utilizando o G
 
 ### Ferramentas
 
+Para otimizar o fluxo de trabalho e garantir eficiência no desenvolvimento, utilizamos as seguintes ferramentas:
+
+* Editor de Código: Visual Studio Code, escolhido por sua integração com Git e suporte a C# e JavaScript.
+* Comunicação: A equipe utiliza o Microsoft Teams como principal plataforma para reuniões, alinhamentos e troca de informações. Como complemento, o WhatsApp funciona como um canal secundário para comunicações rápidas e informais, garantindo agilidade na troca de mensagens, mesmo fora dos dias de reunião no Teams.
+* Gerenciamento de Projetos: GitHub Projects, para organização das tarefas e acompanhamento do progresso.
+* Wireframing: Figma, para prototipagem de interfaces. PowerPoint, usado para a criação dos slides de apresentação.
+
+O uso dessas ferramentas visa garantir a organização, eficiência e colaboração ao longo do desenvolvimento do Autonomize.
+
+
+
+
 As ferramentas empregadas no projeto são:
 
 - Editor de código.
 - Ferramentas de comunicação
 - Ferramentas de desenho de tela (_wireframing_)
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+
