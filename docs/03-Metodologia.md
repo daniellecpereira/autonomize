@@ -41,13 +41,18 @@ A definição de papéis dentro da nossa equipe é baseada no método ágil SCRU
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para a implementação do SCRUM, seguimos uma série de práticas que garantem a eficiência e a organização do nosso trabalho:
+
+* Sprints de curta duração para priorizar itens do Backlog do Produto, acompanhar o progresso, identificar obstáculos e planejar as próximas etapas.
+* Daily meetings para alinhamento diário das tarefas.
+* Review e retrospectivas para melhoria contínua do processo.
+
+Para gerenciar e distribuir as tarefas do projeto, a equipe está utilizando o GitHub Project, estruturado em um Quadro Kanban da seguinte maneira:
+
+* Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.
+* To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.
+* In progress: lista das tarefas iniciadas.
+* Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.
 
 ### Ferramentas
 
