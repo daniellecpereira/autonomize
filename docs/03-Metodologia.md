@@ -31,12 +31,13 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A definição de papéis dentro da nossa equipe é baseada no método ágil SCRUM para estruturar os processos de desenvolvimento e assegurar a clareza nas responsabilidades. Dessa forma, a equipe está organizada da seguinte maneira:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+* Scrum Master: 
+* Product Owner: 
+* Desenvolvedores: Bárbara Laranjeira, Bruno Figueiredo, Danielle Cristina Pereira, Levi Alves, Lorrayne Ritiele, Marina Murari e Victor Emanuel Barbosa.
+* Equipe de Design: Bárbara Laranjeira, Marina Murari 
+* Testadores: 
 
 ### Processo
 
