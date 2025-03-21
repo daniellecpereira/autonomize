@@ -37,7 +37,7 @@ A definição de papéis dentro da nossa equipe é baseada no método ágil SCRU
 * Product Owner: 
 * Desenvolvedores: Bárbara Laranjeira, Bruno Figueiredo, Danielle Cristina Pereira, Levi Alves, Lorrayne Ritiele, Marina Murari e Victor Emanuel Barbosa.
 * Equipe de Design: Bárbara Laranjeira, Marina Murari 
-* Testadores: Danielle Cristina Pereira, Levi Alves,
+* Testadores: Danielle Cristina Pereira, Levi Alves e Lorrayne Ritiele.
 
 ### Processo
 
