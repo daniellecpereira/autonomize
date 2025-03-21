@@ -1,8 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 Nossa metodologia de trabalho é baseada na colaboração ativa de toda a equipe em cada etapa do projeto. Priorizamos a organização e a comunicação constante, garantindo que todas as decisões e mudanças sejam discutidas coletivamente, juntamente mantendo atualizado um relatório aonde todas as alterações feitas são registradas. Dessa forma, todos os membros estão sempre alinhados com o progresso do projeto, promovendo um ambiente de trabalho integrado e eficiente.
 
 
