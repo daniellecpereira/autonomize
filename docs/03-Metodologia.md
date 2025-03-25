@@ -34,7 +34,7 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 A definição de papéis dentro da nossa equipe é baseada no método ágil SCRUM para estruturar os processos de desenvolvimento e assegurar a clareza nas responsabilidades. Dessa forma, a equipe está organizada da seguinte maneira:
 
 * Scrum Master: 
-* Product Owner: 
+* Product Owner: Marina Murari Silva.
 * Desenvolvedores: Bárbara Laranjeira, Bruno Figueiredo, Danielle Cristina Pereira, Levi Alves, Lorrayne Ritiele, Marina Murari e Victor Emanuel Barbosa.
 * Equipe de Design: Bárbara Laranjeira, Marina Murari 
 * Testadores: Danielle Cristina Pereira, Levi Alves e Lorrayne Ritiele.
