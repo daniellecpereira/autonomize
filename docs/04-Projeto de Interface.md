@@ -2,7 +2,7 @@
 # Projeto de Interface
 
 ## Diagrama de Fluxo
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/Diagrama%20de%20Fluxo.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/diagrama%20de%20fluxo.png">
 
 ## Wireframes
 
