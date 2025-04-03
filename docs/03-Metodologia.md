@@ -68,12 +68,3 @@ O uso dessas ferramentas visa garantir a organização, eficiência e colaboraç
 
 
 
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-
