@@ -47,12 +47,15 @@ Para a implementação do SCRUM, seguimos uma série de práticas que garantem a
 * Daily meetings para alinhamento diário das tarefas.
 * Review e retrospectivas para melhoria contínua do processo.
 
-Para gerenciar e distribuir as tarefas do projeto, a equipe está utilizando o GitHub Project, estruturado em um Quadro Kanban da seguinte maneira:
+Para gerenciar e distribuir as tarefas do projeto, a equipe está utilizando o GitHub Projects, estruturado em um Quadro Kanban da seguinte maneira:
 
 * Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.
 * To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.
 * In progress: lista das tarefas iniciadas.
 * Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.
+
+ ![Quadro Kanban no GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/quadroKanban.png?raw=true)
+
 
 ### Ferramentas
 
