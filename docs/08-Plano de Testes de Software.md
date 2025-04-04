@@ -38,6 +38,21 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o sistema gera corretamente os relatórios financeiros com receitas, despesas e lucro líquido. |
 | Passos 	| 01. Acessar a seção de relatórios financeiros. 02. Selecionar um mês específico para gerar o relatório. 03. Clicar no botão "Gerar Relatório". 04. Verificar se os dados de receitas, despesas e lucro líquido são exibidos corretamente. 05. Testar a exportação do relatório em formatos PDF e CSV. |
 |Critério de Êxito | O relatório financeiro é gerado corretamente com os valores esperados. O usuário pode visualizar e exportar o relatório. |
+| Caso de Teste 	| **CT06 – Cadastro e Gestão de Clientes**	|
+|Requisito Associado | RF-006 - O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. |
+| Objetivo do Teste 	| Verificar se o sistema permite cadastrar e gerenciar informações de clientes, incluindo histórico de compras. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de cadastro de clientes. 3.	Cadastrar um novo cliente. 4.	Salvar o cadastro e verificar se foi registrado corretamente. 5.	Editar informações do cliente cadastrado. 6.	Verificar o histórico de compra. 7.	Buscar clientes por diferentes critérios. |
+|Critério de Êxito | O sistema permite cadastrar e gerenciar informações de clientes corretamente, mantendo histórico atualizado de compras e permitindo consultas por diferentes critérios.|
+| Caso de Teste 	| **CT07 – Alertas para Estoque Mínimo**	|
+|Requisito Associado | RF-007 - O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. |
+| Objetivo do Teste 	|Verificar se o sistema identifica e alerta sobre produtos com estoque abaixo do nível mínimo. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Cadastrar ou editar um produto definindo um nível mínimo de estoque. 3.	Registrar saídas do produto até que o estoque fique abaixo do nível mínimo definido. 4.	Verificar se o sistema exibe alerta visual na interface, adiciona o produto à lista de produtos com estoque baixo e envia notificação (se aplicável). 5.	Verificar se existe uma seção consolidada para visualizar todos os produtos com estoque baixo. |
+|Critério de Êxito |O sistema identifica corretamente produtos com estoque abaixo do nível mínimo e gera alertas adequados para informar os usuários. |
+| Caso de Teste 	| **CT08 – Transferência de Estoque Interna**	|
+|Requisito Associado |RF-008 - O sistema deve permitir a transferência de estoque interna. |
+| Objetivo do Teste 	| Verificar se o sistema permite realizar transferências de produtos entre diferentes locais ou departamentos internos. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de transferência de estoque. 3.	Selecionar a origem (local/departamento atual do produto). 4.	Selecionar o destino da transferência. 5.	Adicionar os produtos a serem transferidos com suas quantidades. 6.	Confirmar a transferência. 7.	Verificar se o estoque foi atualizado corretamente em ambos os locais. 8.	Verificar o registro da transferência no histórico de movimentações. |
+|Critério de Êxito | O sistema permite realizar transferências internas de estoque, atualizando corretamente as quantidades nos locais de origem e destino, e mantendo registro da operação. |
 
  
 > **Links Úteis**:
