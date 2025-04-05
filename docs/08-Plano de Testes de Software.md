@@ -85,3 +85,8 @@
 | Objetivo do Teste 	| Verificar se o sistema restringe corretamente as operações de alteração e exclusão de registros de estoque apenas para usuários com perfil de administrador. |
 | Passos 	|1.	Acessar o sistema com credenciais de usuário comum (não administrador). 2.	Navegar até a seção de gerenciamento de estoque. 3.	Tentar alterar informações de um produto no estoque. 4.	Tentar excluir um registro de produto do estoque. 5.	Sair do sistema. 6.	Acessar o sistema com credenciais de usuário administrador (ADM). 7.	Tentar realizar as mesmas operações de alteração e exclusão no estoque. |
 |Critério de Êxito | O sistema permite que apenas usuários com perfil ADM realizem alterações e exclusões no estoque, enquanto exibe mensagem de acesso negado ou oculta estas funcionalidades para usuários comuns. |
+| Caso de Teste		| **CT017 - Compatibilidade do sistema com navegadores distintos**	|
+|Requisito Associado |RNF-003 - O sistema deve ter compatibilidade com Chrome, Firefox e Edge. |
+| Objetivo do Teste |	Verificar se o sistema tem compatilbilidade com navegadores mais utilizados. |
+|Passos	|1. Acessar o sistema nos navegadores Chrome, Firefox e Edge. 2. Realizar login, cadastro e realizar ações do sistema. |
+|Critério de Êxito |	Nenhuma funcionalidade apresenta erro ou incompatibilidade em nenhum dos navegadores. |
