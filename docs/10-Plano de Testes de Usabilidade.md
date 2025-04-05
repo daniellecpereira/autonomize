@@ -20,17 +20,26 @@
 **Critérios para selecionar participantes:**
 
 •	Gestores de estoque e vendas com experiência prévia em sistemas similares.
+
 •	Funcionários do setor administrativo responsáveis pela geração de relatórios.
+
 •	Vendedores que realizam atendimento direto a clientes.
+
 •	Novos colaboradores sem experiência prévia com o sistema.
+
 •	Pessoas com diferentes níveis de familiaridade com tecnologia.
+
 
 **Quantidade recomendada:**
 
 •	3 gestores/administradores
+
 •	3 vendedores
+
 •	2 estoquistas
+
 •	2 novos colaboradores sem experiência prévia
+
 
 
 ## Definição de cenários de teste
