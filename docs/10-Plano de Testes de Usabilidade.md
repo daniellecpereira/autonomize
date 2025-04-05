@@ -53,20 +53,31 @@
 **Tarefa(s):**
 
 •	Acessar a tela inicial do sistema.
+
 •	Localizar e clicar na opção "Cadastrar novo usuário".
+
 •	Preencher todos os campos obrigatórios do formulário de cadastro.
+
 •	Finalizar o cadastro e fazer login no sistema.
+
 •	Acessar as configurações de perfil e atualizar o número de telefone.
+
 •	Salvar as alterações e verificar se foram aplicadas com sucesso.
+
 
 
 **Critério(s) de Sucesso(s):**
 
 •	O usuário consegue localizar a opção de cadastro sem dificuldades.
+
 •	Todos os campos são preenchidos corretamente e o cadastro é concluído sem erros.
+
 •	O login é realizado com sucesso após o cadastro.
+
 •	As informações do perfil são atualizadas corretamente.
+
 •	Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
+
 
 **Cenário 2: Consulta e Movimentação de Estoque**
 
@@ -77,21 +88,33 @@
 **Tarefa(s):**
 
 •	Fazer login no sistema com credenciais de estoquista.
+
 •	Acessar o módulo de estoque.
+
 •	Utilizar a função de busca para localizar o produto "Monitor LCD 24 polegadas".
+
 •	Verificar a quantidade atual em estoque.
+
 •	Registrar a entrada de 15 novas unidades do produto.
+
 •	Registrar a saída de 5 unidades para atender a uma requisição.
+
 •	Verificar se o estoque foi atualizado corretamente.
+
 
 
 **Critério(s) de Sucesso(s):**
 
 •	O usuário localiza o produto específico em menos de 30 segundos.
+
 •	As operações de entrada e saída são registradas sem erros.
+
 •	O sistema atualiza corretamente o saldo em estoque após cada operação.
+
 •	As informações de estoque são consistentes após as operações.
+
 •	Todo o processo é concluído em menos de 3 minutos.
+
 
 **Cenário 3: Geração e Análise de Relatórios Financeiros**
 
@@ -102,22 +125,35 @@
 **Tarefa(s):**
 
 •	Acessar o sistema com credenciais de gerente.
+
 •	Navegar até o módulo de relatórios financeiros.
+
 •	Selecionar o mês anterior como período de análise.
+
 •	Gerar um relatório financeiro completo.
+
 •	Identificar o valor total de receitas, despesas e lucro líquido.
+
 •	Navegar para a seção de análise de vendas.
+
 •	Utilizar filtros para identificar os 5 produtos mais vendidos no período.
+
 •	Exportar os resultados em formato PDF.
+
 
 
 **Critério(s) de Sucesso(s):**
 
 •	O usuário consegue gerar o relatório financeiro sem dificuldades.
+
 •	As informações financeiras são exibidas de forma clara e compreensível.
+
 •	Os filtros de análise de vendas são localizados e aplicados corretamente.
+
 •	O relatório é exportado com sucesso.
+
 •	Todo o processo é concluído em menos de 4 minutos.
+
 
 **Cenário 4: Configuração e Visualização de Alertas**
 
@@ -128,24 +164,39 @@
 **Tarefa(s):**
 
 •	Acessar o sistema com credenciais de administrador.
+
 •	Navegar até a configuração de alertas de estoque.
+
 •	Definir um nível mínimo de 10 unidades para o produto "Toner Impressora XYZ".
+
 •	Salvar a configuração.
+
 •	Simular uma redução no estoque para 8 unidades (abaixo do mínimo).
+
 •	Verificar se o alerta foi gerado corretamente.
+
 •	Navegar até o painel de alertas.
+
 •	Filtrar por "Produtos próximos do vencimento".
+
 •	Visualizar os detalhes de um alerta específico.
+
 •	Marcar o alerta como "visualizado".
+
 
 
 **Critério(s) de Sucesso(s):**
 
 •	O nível mínimo de estoque é configurado sem dificuldades.
+
 •	O sistema gera o alerta corretamente quando o estoque fica abaixo do mínimo.
+
 •	Os alertas são facilmente localizados e filtrados no painel.
+
 •	As informações dos alertas são claras e acionáveis.
+
 •	Todo o processo é realizado em menos de 5 minutos.
+
 
 **Cenário 5: Cadastro de Cliente e Registro de Venda**
 
@@ -156,25 +207,41 @@
 **Tarefa(s):**
 
 •	Acessar o sistema com credenciais de vendedor.
+
 •	Navegar até o módulo de cadastro de clientes.
+
 •	Criar um novo cadastro com nome, telefone, email e endereço.
+
 •	Salvar o cadastro do cliente.
+
 •	Iniciar um novo registro de venda para este cliente.
+
 •	Adicionar 3 produtos diferentes ao carrinho de compras.
+
 •	Escolher a forma de pagamento como "Cartão de Crédito".
+
 •	Finalizar a venda.
+
 •	Verificar se o estoque dos produtos vendidos foi atualizado automaticamente.
+
 •	Consultar o histórico de compras do cliente recém-cadastrado.
+
 
 
 **Critério(s) de Sucesso(s):**
 
 •	O cadastro do cliente é realizado sem erros.
+
 •	Os produtos são adicionados ao carrinho corretamente.
+
 •	A venda é finalizada com sucesso.
+
 •	O estoque é atualizado automaticamente após a conclusão da venda.
+
 •	O histórico de compras do cliente é atualizado com a nova venda.
+
 •	Todo o processo é concluído em menos de 6 minutos.
+
 
 
 ## Métodos de coleta de dados
