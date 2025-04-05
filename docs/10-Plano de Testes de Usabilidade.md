@@ -2,12 +2,18 @@
 
 ## Definição do(s) objetivo(s)
 
-• Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades. 
+• Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades.
+
 •	Avaliar a eficiência da interface para consulta e movimentação de estoque.
+
 •	Identificar possíveis barreiras na navegação e interação com o sistema de geração de relatórios.
+
 •	Testar a clareza dos alertas automáticos e notificações do sistema.
+
 •	Avaliar a facilidade de uso nas funcionalidades de gestão de clientes e vendas.
+
 •	Verificar se as restrições de permissão são compreensíveis para os usuários.
+
 
 ## Seleção dos participantes
 
