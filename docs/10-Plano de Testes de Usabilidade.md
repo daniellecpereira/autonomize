@@ -2,7 +2,7 @@
 
 ## Definição do(s) objetivo(s)
 
-- Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades.
+• Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades. 
 •	Avaliar a eficiência da interface para consulta e movimentação de estoque.
 •	Identificar possíveis barreiras na navegação e interação com o sistema de geração de relatórios.
 •	Testar a clareza dos alertas automáticos e notificações do sistema.
