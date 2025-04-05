@@ -53,12 +53,43 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o sistema permite realizar transferências de produtos entre diferentes locais ou departamentos internos. |
 | Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de transferência de estoque. 3.	Selecionar a origem (local/departamento atual do produto). 4.	Selecionar o destino da transferência. 5.	Adicionar os produtos a serem transferidos com suas quantidades. 6.	Confirmar a transferência. 7.	Verificar se o estoque foi atualizado corretamente em ambos os locais. 8.	Verificar o registro da transferência no histórico de movimentações. |
 |Critério de Êxito | O sistema permite realizar transferências internas de estoque, atualizando corretamente as quantidades nos locais de origem e destino, e mantendo registro da operação. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Caso de Teste 	| **CT09 – Histórico Individual de Produto**	|
+|Requisito Associado |RF-009 - O sistema deve permitir ver o histórico individual de cada produto. |
+| Objetivo do Teste 	| Verificar se o sistema exibe o histórico completo de movimentações de um produto específico. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de produtos ou estoque. 3.	Buscar e selecionar um produto específico. 4.	Acessar a opção de visualizar histórico do produto. 5.	Verificar se o sistema exibe todas as movimentações do produto: entradas, saídas, ajustes de estoque, datas das movimentações e responsáveis pelas operações. 6.	Verificar a possibilidade de filtrar o histórico por período. |
+|Critério de Êxito | O sistema exibe corretamente todo o histórico de movimentações do produto selecionado, com informações detalhadas sobre cada operação. |
+| Caso de Teste 	| **CT010 – - Notificação de Prazo Final de Pagamento**	|
+|Requisito Associado |RF- 010 - O sistema deve notificar quando o cliente estiver no prazo final de pagamento. |
+| Objetivo do Teste 	| Verificar se o sistema identifica clientes com prazo de pagamento próximo do vencimento e emite notificações apropriadas. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Cadastrar vendas com pagamento a prazo para clientes. 3.	Ajustar a data do sistema para aproximar-se da data limite de pagamento. 4.	Verificar se o sistema: exibe alerta visual na interface, lista os pagamentos pendentes próximos do vencimento, envia notificação ao usuário responsável (se aplicável) e envia lembretes ao cliente (se aplicável). 5.	Verificar a existência de uma seção consolidada para visualizar todos os pagamentos pendentes. |
+|Critério de Êxito | O sistema identifica corretamente clientes com pagamentos próximos do vencimento e emite as notificações adequadas para os usuários do sistema. |
+| Caso de Teste 	| **CT011 – Visualizar Produtos com mais Vendas em Períodos Específicos**	|
+|Requisito Associado |RF-011 - O sistema deve permitir visualizar quais produtos geram mais vendas em períodos específicos do ano. |
+| Objetivo do Teste 	| Verificar se o sistema exibe corretamente relatórios de produtos mais vendidos por período específico. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de relatórios/análises de vendas. 3.	Selecionar a opção para visualizar produtos mais vendidos. 4.	Definir um período específico (mês, trimestre, estação do ano). 5.	Verificar se o sistema gera o relatório com os dados solicitados. 6.	Validar se os dados apresentados correspondem às vendas registradas no período selecionado. |
+|Critério de Êxito | O sistema exibe corretamente o relatório dos produtos mais vendidos no período selecionado, apresentando os dados de forma organizada e com cálculos precisos. |
+| Caso de Teste 	| **CT012 – Controle de Agendamentos e Atendimentos**	|
+|Requisito Associado |RF-012 - O sistema deve permitir o controle de agendamentos e atendimentos aos clientes. |
+| Objetivo do Teste 	| Verificar se o sistema permite criar, visualizar, editar e excluir agendamentos, além de registrar atendimentos realizados. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de agendamentos. 3.	Criar um novo agendamento com dados de cliente, data, hora e serviço. 4.	Verificar se o sistema registra corretamente o agendamento. 5.	Editar informações do agendamento e verificar se as alterações são salvas. 6.	Registrar a conclusão de um atendimento. 7.	Verificar se o histórico de atendimentos é atualizado. 8.	Cancelar um agendamento e verificar se o sistema processa corretamente. |
+|Critério de Êxito | O sistema permite gerenciar agendamentos (criar, editar, cancelar) e registrar atendimentos, mantendo o histórico atualizado e exibindo corretamente os status de cada item. |
+| Caso de Teste 	| **CT013 – Pesquisa Avançada no Histórico de Vendas**	|
+|Requisito Associado | RF-013 - O sistema deve permitir a pesquisa avançada no histórico de venda de produtos. |
+| Objetivo do Teste 	| Verificar se o sistema possibilita realizar buscas detalhadas no histórico de vendas usando diferentes critérios de filtro. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de histórico de vendas. 3.	Testar pesquisa por diferentes critérios. 4.	Combinar múltiplos critérios em uma única pesquisa. 5.	Verificar se os resultados correspondem aos critérios utilizados. |
+|Critério de Êxito |O sistema retorna resultados precisos e completos para cada critério de pesquisa utilizado, incluindo combinações de múltiplos filtros. |
+| Caso de Teste 	| **CT014 – Registro de Vendas em Tempo Real com Atualização do Estoque**	|
+|Requisito Associado |RF-014 - O sistema deve permitir o registro de vendas em tempo real com atualização automática do estoque. |
+| Objetivo do Teste 	| Verificar se o sistema registra corretamente as vendas e atualiza automaticamente o estoque após cada venda. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Verificar o nível de estoque de um produto específico antes da venda. 3.	Navegar até a seção de registro de vendas. 4.	Registrar uma nova venda incluindo o produto verificado. 5.	Finalizar a venda. 6.	Verificar se o sistema registrou corretamente a venda. 7.	Verificar se o estoque do produto foi atualizado automaticamente. 8.	Verificar se o histórico de vendas foi atualizado. |
+|Critério de Êxito | O sistema registra a venda corretamente e atualiza o estoque automaticamente, refletindo a quantidade vendida. |
+| Caso de Teste 	| **CT015 – Alerta de Produtos Próximos do Vencimento**	|
+|Requisito Associado |RF-015 - O sistema deve identificar e alertar sobre produtos próximos do vencimento. |
+| Objetivo do Teste 	| Verificar se o sistema identifica corretamente produtos próximos da data de vencimento e emite alertas apropriados. |
+| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Cadastrar ou modificar produtos com datas de vencimento próximas. 3.	Verificar se o sistema exibe alertas visuais na interface para produtos com vencimento próximo. 4.	Verificar se existe uma seção específica para listar produtos próximos do vencimento. 5.	Testar se o sistema envia notificações (e-mail, sistema) sobre produtos prestes a vencer. |
+|Critério de Êxito | O sistema identifica corretamente produtos próximos do vencimento, exibe alertas visuais e/ou envia notificações conforme configurado. |
+| Caso de Teste 	| **CT016 – Controle de Acesso para Alterações no Estoque**	|
+|Requisito Associado |RF-016 - Apenas usuários ADM podem alterar ou excluir registros do estoque. |
+| Objetivo do Teste 	| Verificar se o sistema restringe corretamente as operações de alteração e exclusão de registros de estoque apenas para usuários com perfil de administrador. |
+| Passos 	|1.	Acessar o sistema com credenciais de usuário comum (não administrador). 2.	Navegar até a seção de gerenciamento de estoque. 3.	Tentar alterar informações de um produto no estoque. 4.	Tentar excluir um registro de produto do estoque. 5.	Sair do sistema. 6.	Acessar o sistema com credenciais de usuário administrador (ADM). 7.	Tentar realizar as mesmas operações de alteração e exclusão no estoque. |
+|Critério de Êxito | O sistema permite que apenas usuários com perfil ADM realizem alterações e exclusões no estoque, enquanto exibe mensagem de acesso negado ou oculta estas funcionalidades para usuários comuns. |
