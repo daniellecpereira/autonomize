@@ -262,6 +262,7 @@
 •	Número de vezes que o usuário solicitou ajuda.
 
 **Métricas qualitativas:**
+
 •	Expressões faciais e reações durante a execução das tarefas
 
 •	Comentários espontâneos durante o teste
@@ -297,6 +298,7 @@
 Observação: Todos os dados coletados serão tratados conforme a LGPD (Lei Geral de Proteção de Dados), sem identificação dos participantes. Serão utilizados apenas códigos para referência aos usuários (U1, U2, etc.).
 
 
+**Estava no arquivo do git**
 Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
 
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
