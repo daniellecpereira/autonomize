@@ -58,7 +58,7 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o sistema exibe o histórico completo de movimentações de um produto específico. |
 | Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de produtos ou estoque. 3.	Buscar e selecionar um produto específico. 4.	Acessar a opção de visualizar histórico do produto. 5.	Verificar se o sistema exibe todas as movimentações do produto: entradas, saídas, ajustes de estoque, datas das movimentações e responsáveis pelas operações. 6.	Verificar a possibilidade de filtrar o histórico por período. |
 |Critério de Êxito | O sistema exibe corretamente todo o histórico de movimentações do produto selecionado, com informações detalhadas sobre cada operação. |
-| Caso de Teste 	| **CT010 – - Notificação de Prazo Final de Pagamento**	|
+| Caso de Teste 	| **CT010 – Notificação de Prazo Final de Pagamento**	|
 |Requisito Associado |RF- 010 - O sistema deve notificar quando o cliente estiver no prazo final de pagamento. |
 | Objetivo do Teste 	| Verificar se o sistema identifica clientes com prazo de pagamento próximo do vencimento e emite notificações apropriadas. |
 | Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Cadastrar vendas com pagamento a prazo para clientes. 3.	Ajustar a data do sistema para aproximar-se da data limite de pagamento. 4.	Verificar se o sistema: exibe alerta visual na interface, lista os pagamentos pendentes próximos do vencimento, envia notificação ao usuário responsável (se aplicável) e envia lembretes ao cliente (se aplicável). 5.	Verificar a existência de uma seção consolidada para visualizar todos os pagamentos pendentes. |
