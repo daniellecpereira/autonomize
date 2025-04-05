@@ -249,6 +249,54 @@
 
 ## Métodos de coleta de dados
 
+**Métricas quantitativas:**
+
+•	Tempo gasto para completar cada tarefa (em segundos).
+
+•	Número de cliques necessários para concluir cada operação.
+
+•	Taxa de conclusão das tarefas (percentual de tarefas concluídas com sucesso).
+
+•	Número de erros cometidos durante a execução.
+
+•	Número de vezes que o usuário solicitou ajuda.
+
+**Métricas qualitativas:**
+•	Expressões faciais e reações durante a execução das tarefas
+
+•	Comentários espontâneos durante o teste
+
+•	Dificuldades observadas em pontos específicos da interface
+
+•	Confusões ou hesitações ao interagir com elementos da interface
+
+•	Estratégias utilizadas para resolver problemas encontrados
+
+**Questionário pós-teste:**
+1.	A interface do sistema foi fácil de entender? (1-5)
+   
+2.	Você encontrou dificuldades para localizar as funcionalidades necessárias? (1-5)
+   
+3.	Os alertas e mensagens do sistema foram claros e úteis? (1-5)
+   
+4.	O sistema respondeu rapidamente às suas ações? (1-5)
+   
+5.	As informações apresentadas nos relatórios foram claras e bem organizadas? (1-5)
+    
+6.	Você conseguiu recuperar-se facilmente após cometer erros? (1-5)
+    
+7.	O que você considera mais positivo na interface do sistema?
+    
+8.	O que você considera mais confuso ou difícil na interface do sistema?
+    
+9.	Quais sugestões você daria para melhorar a experiência de uso?
+    
+10.	Você se sentiu confiante ao utilizar o sistema? (1-5)
+
+    
+Observação: Todos os dados coletados serão tratados conforme a LGPD (Lei Geral de Proteção de Dados), sem identificação dos participantes. Serão utilizados apenas códigos para referência aos usuários (U1, U2, etc.).
+
+
 Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
 
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
