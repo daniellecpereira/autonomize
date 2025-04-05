@@ -17,6 +17,7 @@
 
 ## Seleção dos participantes
 
+
 **Critérios para selecionar participantes:**
 
 •	Gestores de estoque e vendas com experiência prévia em sistemas similares.
@@ -28,6 +29,7 @@
 •	Novos colaboradores sem experiência prévia com o sistema.
 
 •	Pessoas com diferentes níveis de familiaridade com tecnologia.
+
 
 
 **Quantidade recomendada:**
@@ -49,6 +51,7 @@
 **Objetivo:** Avaliar a facilidade e intuitividade do processo de cadastro de usuário e gestão de perfil.
 
 **Contexto:** Um novo funcionário precisa acessar o sistema pela primeira vez, criar seu perfil de usuário e posteriormente atualizar algumas informações pessoais.
+
 
 **Tarefa(s):**
 
