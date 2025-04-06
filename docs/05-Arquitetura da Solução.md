@@ -6,7 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/Fluxo%20de%20Usu%C3%A1rio%20-%20Autonimize.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/DiagramaDeClasse.png">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/blob/main/docs/img/DiagramaDeClasse.png">
 
 ## Modelo ER (Projeto Conceitual)
 
