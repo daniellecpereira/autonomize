@@ -33,8 +33,8 @@
 | Caso de Teste 	| **CT06 – Cadastro e Gestão de Clientes**	|
 |Requisito Associado | RF-006 - O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. |
 | Objetivo do Teste 	| Verificar se o sistema permite cadastrar e gerenciar informações de clientes, incluindo histórico de compras. |
-| Passos 	|1.	Acessar o sistema com credenciais válidas. 2.	Navegar até a seção de cadastro de clientes. 3.	Cadastrar um novo cliente. 4.	Salvar o cadastro e verificar se foi registrado corretamente. 5.	Editar informações do cliente cadastrado. 6.	Verificar o histórico de compra. 7.	Buscar clientes por diferentes critérios. |
-|Critério de Êxito | O sistema permite cadastrar e gerenciar informações de clientes corretamente, mantendo histórico atualizado de compras e permitindo consultas por diferentes critérios.|
+| Passos 	|1.	Acessar a seção de cadastro de clientes. 2. Cadastrar um novo cliente. 3. Salvar o cadastro e verificar se foi registrado corretamente. 4. Editar informações do cliente cadastrado. 5. Verificar o histórico de compra. |
+|Critério de Êxito | O sistema permite cadastrar e gerenciar informações de clientes corretamente, mantendo histórico atualizado de compras.|
 | Caso de Teste 	| **CT07 – Alertas para Estoque Mínimo**	|
 |Requisito Associado | RF-007 - O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. |
 | Objetivo do Teste 	|Verificar se o sistema identifica e alerta sobre produtos com estoque abaixo do nível mínimo. |
