@@ -6,13 +6,58 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+|	Requisito Associado 	| RF-001 - A aplicação deve permitir que os usuários realizem cadastro do seu perfil. |
 |Registro de evidência | www.teste.com.br/drive/ct-01 |
-
-| **Caso de Teste** 	| **CT02 – Realizar login** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
+| **Caso de Teste** 	| **CT02 – Consulta de Itens no Estoque** 	|
+|	Requisito Associado 	| RF-002 - O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT03 – CT03 – Entrada e Saída de Produtos no Estoque** 	|
+|	Requisito Associado 	| RF-003 - O sistema deverá permitir que o usuário realize a entrada e saída de produtos. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT04 – CT04 – Cadastro de Produtos** 	|
+|	Requisito Associado 	| RF-004 - O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT05 – Geração de Relatório Financeiro Mensal** 	|
+|	Requisito Associado 	| RF-005 - O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT06 – Cadastro e Gestão de Clientes** 	|
+|	Requisito Associado 	| RF-006 - O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. |
+|Registro de evidência | [www.teste.com.br/drive/ct-01](https://drive.google.com/file/d/19IljSARqgyLlfRzTejyDGa0gp2YGqSDT/view?usp=sharing) |
+| **Caso de Teste** 	| **CT07 – Alertas para Estoque Mínimo** 	|
+|	Requisito Associado 	| RF-007 - O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT08 – Transferência de Estoque Interna** 	|
+|	Requisito Associado 	| RF-008 - O sistema deve permitir a transferência de estoque interna. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT09 – Histórico Individual de Produto** 	|
+|	Requisito Associado 	| RF-009 - O sistema deve permitir ver o histórico individual de cada produto. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT010 – Notificação de Prazo Final de Pagamento** 	|
+|	Requisito Associado 	| RF- 010 - O sistema deve notificar quando o cliente estiver no prazo final de pagamento. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT011 – Visualizar Produtos com mais Vendas em Períodos Específicos** 	|
+|	Requisito Associado 	| RF-011 - O sistema deve permitir visualizar quais produtos geram mais vendas em períodos específicos do ano. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT012 – Controle de Agendamentos e Atendimentos** 	|
+|	Requisito Associado 	| RF-012 - O sistema deve permitir o controle de agendamentos e atendimentos aos clientes.|
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT013 – Pesquisa Avançada no Histórico de Vendas** 	|
+|	Requisito Associado 	| RF-013 - O sistema deve permitir a pesquisa avançada no histórico de venda de produtos.|
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT014 – Registro de Vendas em Tempo Real com Atualização do Estoque** 	|
+|	Requisito Associado 	| RF-014 - O sistema deve permitir o registro de vendas em tempo real com atualização automática do estoque.|
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT015 – Alerta de Produtos Próximos do Vencimento** 	|
+|	Requisito Associado 	| RF-015 - O sistema deve identificar e alertar sobre produtos próximos do vencimento. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT016 – Controle de Acesso para Alterações no Estoque** 	|
+|	Requisito Associado 	| RF-016 - Apenas usuários ADM podem alterar ou excluir registros do estoque. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** 	| **CT017 - Compatibilidade do sistema com navegadores distintos** 	|
+|	Requisito Associado 	| RNF-003 - O sistema deve ter compatibilidade com Chrome, Firefox e Edge. |
+|Registro de evidência | www.teste.com.br/drive/ct-02 |
+
+
 
 ## Relatório de testes de software
 
