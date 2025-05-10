@@ -10,10 +10,10 @@
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
 | **Caso de Teste** 	| **CT03 – CT03 – Entrada e Saída de Produtos no Estoque** 	|
 |	Requisito Associado 	| RF-003 - O sistema deverá permitir que o usuário realize a entrada e saída de produtos. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db |
 | **Caso de Teste** 	| **CT04 – CT04 – Cadastro de Produtos** 	|
 |	Requisito Associado 	| RF-004 - O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db |
 | **Caso de Teste** 	| **CT05 – Geração de Relatório Financeiro Mensal** 	|
 |	Requisito Associado 	| RF-005 - O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
