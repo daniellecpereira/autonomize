@@ -1,29 +1,29 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Nesta seção, a implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Nesta seção, é essencial relacionar os requisitos atendidos com os artefatos criados (código fonte) e com o(s) responsável(is) pelo desenvolvimento de cada artefato a cada etapa. Nesta seção também deverão ser apresentadas, se necessário, as instruções para acesso e verificação da **implementação que deve estar funcional no ambiente de hospedagem, OBRIGATORIAMENTE, a partir da Etapa 03**.
-
-**O que DEVE ser utilizado para o desenvolvimento da aplicação:**
-- Microsoft Visual Studio (IDE de Codificação)
-- HTML e CSS (frontend)
-- Javascript (frontend)
-- C# (backend)
-- MySQL ou SQLServer(Base de Dados)
-- Bootstrap (template responsivo para frontend)
-- Github (documentação e controle de versão)
-
-**O que NÃO PODE ser utilizado:**
-- Template React (e qualquer outro template - exceto o Bootstrap)
-- Qualquer outra liguagem de programação diferente de C#
-
-A tabela a seguir é um exemplo de como ela deverá ser preenchida considerando os artefatos desenvolvidos.
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
 |------|-----------------------------------------|----|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| |  |
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
+|RF-001| A aplicação deve permitir que os usuários realizem cadastro do seu perfil.| |  |
+|RF-002| O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos. |  |  |
+|RF-003| O sistema deverá permitir que o usuário realize a entrada e saída de produtos.	|  |  |
+|RF-004| O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída.	. |  |  |
+|RF-005| O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido.	 |  |  |
+|RF-006| O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. | Cliente/Create.cshtml, Cliente/Edit.cshtml, Cliente/Index.cshtml, ClienteController.cs, Models/Cliente.cs | Bárbara |
+|RF-007| O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. |  |  |
+|RF-008| O sistema deve permitir a transferência de estoque interna. |  |  |
+|RF-009| O sistema deve permitir ver o historico individual de cada produto. |  |  |
+|RF-010| O sistema deve notificar quando o cliente estiver no prazo final de pagamento.	 |  |  |
+|RF-011| O sistema deve permitir visualizar quais produtos geram mais vendas em períodos específicos do ano. |  |  |
+|RF-012| O sistema deve permitir o controle de agendamentos e atendimentos aos clientes. |  |  |
+|RF-013| O sistema deve permitir a pesquisa avançada no histórico de venda de produtos.	 |  |  |
+|RF-014| O sistema deve permitir o registro de vendas em tempo real com atualização automática do estoque. |  |  |
+|RF-015| O sistema deve identificar e alertar sobre produtos próximos do vencimento. |  |  |
+|RF-016| Apenas usuários ADM podem alterar ou excluir registros do estoque.	 |  |  |
+
+
+
+
 
 
 # Instruções de acesso
