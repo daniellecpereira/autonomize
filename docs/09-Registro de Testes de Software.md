@@ -19,7 +19,7 @@
 |Registro de evidência | https://www.loom.com/share/c966eed43ad3422694dd0a8ff8e232b8?sid=ff7ff7e6-5d51-40ca-889d-695641d24ee8 |
 | **Caso de Teste** 	| **CT06 – Cadastro e Gestão de Clientes** 	|
 |	Requisito Associado 	| RF-006 - O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. |
-|Registro de evidência | [www.teste.com.br/drive/ct-01](https://drive.google.com/file/d/19IljSARqgyLlfRzTejyDGa0gp2YGqSDT/view?usp=sharing) |
+|Registro de evidência | https://drive.google.com/file/d/19IljSARqgyLlfRzTejyDGa0gp2YGqSDT/view?usp=sharing |
 | **Caso de Teste** 	| **CT07 – Alertas para Estoque Mínimo** 	|
 |	Requisito Associado 	| RF-007 - O sistema deverá gerar alertas automáticos para produtos com estoque abaixo do nível mínimo definido. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
