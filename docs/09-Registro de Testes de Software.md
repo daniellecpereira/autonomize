@@ -16,7 +16,7 @@
 |Registro de evidência | https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db |
 | **Caso de Teste** 	| **CT05 – Geração de Relatório Financeiro Mensal** 	|
 |	Requisito Associado 	| RF-005 - O sistema deverá gerar relatórios financeiros mensais, apresentando receitas, despesas e lucro líquido. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://www.loom.com/share/c966eed43ad3422694dd0a8ff8e232b8?sid=ff7ff7e6-5d51-40ca-889d-695641d24ee8 |
 | **Caso de Teste** 	| **CT06 – Cadastro e Gestão de Clientes** 	|
 |	Requisito Associado 	| RF-006 - O sistema deverá permitir o cadastro e a gestão de clientes, incluindo nome, contato e histórico de compras. |
 |Registro de evidência | [www.teste.com.br/drive/ct-01](https://drive.google.com/file/d/19IljSARqgyLlfRzTejyDGa0gp2YGqSDT/view?usp=sharing) |
