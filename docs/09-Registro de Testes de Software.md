@@ -4,7 +4,7 @@
 | **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - A aplicação deve permitir que os usuários realizem cadastro do seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+|Registro de evidência | https://drive.google.com/file/d/1AW2ZIgA93GyZKi-ZO7NkLAePWFS_kiiX/view?usp=sharing |
 | **Caso de Teste** 	| **CT02 – Consulta de Itens no Estoque** 	|
 |	Requisito Associado 	| RF-002 - O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
