@@ -7,7 +7,7 @@
 |Registro de evidência | https://drive.google.com/file/d/1AW2ZIgA93GyZKi-ZO7NkLAePWFS_kiiX/view?usp=sharing |
 | **Caso de Teste** 	| **CT02 – Consulta de Itens no Estoque** 	|
 |	Requisito Associado 	| RF-002 - O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://www.loom.com/share/b4041f9ee45d4cfab62bd7d21b271345?sid=23b0b421-d1d3-497e-9d88-be8636586145 |
 | **Caso de Teste** 	| **CT03 – CT03 – Entrada e Saída de Produtos no Estoque** 	|
 |	Requisito Associado 	| RF-003 - O sistema deverá permitir que o usuário realize a entrada e saída de produtos. |
 |Registro de evidência | https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db |
