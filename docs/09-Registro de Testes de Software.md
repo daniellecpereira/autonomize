@@ -28,7 +28,7 @@
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
 | **Caso de Teste** 	| **CT09 – Histórico Individual de Produto** 	|
 |	Requisito Associado 	| RF-009 - O sistema deve permitir ver o histórico individual de cada produto. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://www.loom.com/share/fd92c8c6400049479ed2b6e06329af35?sid=11708887-c755-423b-90c0-fddabbea5a26 |
 | **Caso de Teste** 	| **CT010 – Notificação de Prazo Final de Pagamento** 	|
 |	Requisito Associado 	| RF- 010 - O sistema deve notificar quando o cliente estiver no prazo final de pagamento. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
