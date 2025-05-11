@@ -63,8 +63,6 @@
 
 •	Finalizar o cadastro e fazer login no sistema.
 
-•	Acessar as configurações de perfil e atualizar o número de telefone.
-
 •	Salvar as alterações e verificar se foram aplicadas com sucesso.
 
 
