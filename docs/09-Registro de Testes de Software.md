@@ -10,8 +10,7 @@
 |Registro de evidência | https://www.loom.com/share/b4041f9ee45d4cfab62bd7d21b271345?sid=23b0b421-d1d3-497e-9d88-be8636586145 |
 | **Caso de Teste** 	| **CT03 – CT03 – Entrada e Saída de Produtos no Estoque** 	|
 |	Requisito Associado 	| RF-003 - O sistema deverá permitir que o usuário realize a entrada e saída de produtos. |
-|Registro de evidência | Em caso de venda: https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db 
-Em caso de edição: https://www.loom.com/share/0dce0b16b8f54ba2ab64df281c4e948e?sid=259de685-72fa-4ca2-8c6f-725c32d99871|
+|Registro de evidência | Em caso de venda: https://www.loom.com/share/3a90acea7ebe4bf6a235cdea31d6bc1d?sid=7026389c-3c13-409f-a6e9-1d256a63b1db Em caso de edição: https://www.loom.com/share/0dce0b16b8f54ba2ab64df281c4e948e?sid=259de685-72fa-4ca2-8c6f-725c32d99871|
 | **Caso de Teste** 	| **CT04 – CT04 – Cadastro de Produtos** 	|
 |	Requisito Associado 	| RF-004 - O sistema deverá permitir o cadastro de produtos com nome, descrição, preço de entrada e saída. |
 |Registro de evidência | https://www.loom.com/share/bd98e50dcfa944daad62c74531d0c9e1?sid=f65a9f84-284a-4b55-8852-631952fb533f |
