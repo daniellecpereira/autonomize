@@ -30,6 +30,8 @@
 |	Requisito Associado 	| RF-009 - O sistema deve permitir ver o histórico individual de cada produto. |
 |Registro de evidência | https://www.loom.com/share/fd92c8c6400049479ed2b6e06329af35?sid=11708887-c755-423b-90c0-fddabbea5a26 |
 | **Caso de Teste** 	| **CT010 – Notificação de Prazo Final de Pagamento** 	|
+|	Requisito Associado 	| RF- 002 - O sistema deverá permitir a consulta de itens cadastrados no estoque, exibindo a quantidade disponível dos mesmos. |
+|Registro de evidência | https://www.loom.com/share/b4041f9ee45d4cfab62bd7d21b271345?sid=23b0b421-d1d3-497e-9d88-be8636586145 |
 |	Requisito Associado 	| RF- 010 - O sistema deve notificar quando o cliente estiver no prazo final de pagamento. |
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
 | **Caso de Teste** 	| **CT011 – Visualizar Produtos com mais Vendas em Períodos Específicos** 	|
