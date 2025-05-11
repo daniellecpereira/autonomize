@@ -52,7 +52,7 @@
 |Registro de evidência | www.teste.com.br/drive/ct-02 |
 | **Caso de Teste** 	| **CT017 - Compatibilidade do sistema com navegadores distintos** 	|
 |	Requisito Associado 	| RNF-003 - O sistema deve ter compatibilidade com Chrome, Firefox e Edge. |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | https://drive.google.com/file/d/1wTA2MmFiWuCJXNapEwXZA0uji8sLLQTc/view?usp=sharing |
 
 
 
