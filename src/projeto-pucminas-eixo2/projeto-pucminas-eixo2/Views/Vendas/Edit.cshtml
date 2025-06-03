@@ -1,0 +1,108 @@
+﻿@model projeto_pucminas_eixo2.Models.Venda
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>Venda</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Cliente" class="control-label"></label>
+                <input asp-for="Cliente" class="form-control" />
+                <span asp-validation-for="Cliente" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" type="date" value="@Model.Data.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="Data" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="QuantidadeVenda" class="control-label"></label>
+                <input asp-for="QuantidadeVenda" class="form-control" id="QuantidadeVenda" />
+                <span asp-validation-for="QuantidadeVenda" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Valor (R$)</label>
+                <input type="text" id="ValorFormatado" class="form-control" readonly />
+            </div>
+
+            <!-- Valor puro para envio no form -->
+            <input type="hidden" asp-for="Valor" id="Valor" />
+
+            <div class="form-group">
+                <label>Valor Total (R$)</label>
+                <input type="text" id="ValorTotal" class="form-control" readonly />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoPagamento>()"></select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProdutoId" class="control-label"></label>
+                <select asp-for="ProdutoId" class="form-control" asp-items="ViewBag.ProdutoId"></select>
+                <span asp-validation-for="ProdutoId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" /> |
+                <a asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        (function () {
+            const valorInputHidden = document.getElementById("Valor");
+            const valorFormatadoInput = document.getElementById("ValorFormatado");
+            const quantidadeInput = document.getElementById("QuantidadeVenda");
+            const valorTotalInput = document.getElementById("ValorTotal");
+
+            // Função que formata números em moeda BRL (sem alterar o valor real)
+            function formatarMoeda(valor) {
+                return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            }
+
+            function atualizarValores() {
+                // Pega o valor puro da hidden (que está em padrão . decimal)
+                let valorPuro = parseFloat(valorInputHidden.value.replace(',', '.'));
+                if (isNaN(valorPuro)) valorPuro = 0;
+
+                let quantidade = parseInt(quantidadeInput.value);
+                if (isNaN(quantidade) || quantidade < 0) quantidade = 0;
+
+                // Calcula valor total normalmente sem alterar valorPuro
+                let total = valorPuro * quantidade;
+
+                // Só para mostrar, formatando em moeda brasileira
+                valorFormatadoInput.value = formatarMoeda(valorPuro);
+                valorTotalInput.value = formatarMoeda(total);
+            }
+
+            // Inicializa os valores na página
+            atualizarValores();
+
+            // Atualiza valores quando a quantidade mudar
+            quantidadeInput.addEventListener("input", atualizarValores);
+        })();
+    </script>
+}
