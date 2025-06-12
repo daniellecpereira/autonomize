@@ -25,14 +25,26 @@ namespace Autonomize.Controllers {
         [HttpPost]
         public async Task<IActionResult> Create(Cliente cliente) {
             if (ModelState.IsValid) {
+
                 _context.Clientes.Add(cliente);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return Redirect("SaveCreateHistorico");
             }
 
             return View(cliente);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> SaveCreateHistorico() {
+            var a = await _context.Clientes.ToListAsync();
+            var cliente = a.LastOrDefault();
+
+            var historico = new Historico(TiposItem.Cliente, TiposAlteracao.Create, cliente.Id, cliente.Nome, DateTime.Now);
+            _context.Historicos.Add(historico);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
 
 
         public async Task<IActionResult> Edit(int? id) {
@@ -54,6 +66,8 @@ namespace Autonomize.Controllers {
                 return NotFound();
 
             if (ModelState.IsValid) {
+                var historico = new Historico(TiposItem.Cliente, TiposAlteracao.Edit, cliente.Id, cliente.Nome, DateTime.Now);
+                _context.Historicos.Add(historico);
                 _context.Clientes.Update(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -92,7 +106,8 @@ namespace Autonomize.Controllers {
             var dados = await _context.Clientes.FindAsync(id);
             if (dados == null)
                 return NotFound();
-
+            var historico = new Historico(TiposItem.Cliente, TiposAlteracao.Delete, dados.Id, dados.Nome, DateTime.Now);
+            _context.Historicos.Add(historico);
             _context.Clientes.Remove(dados);
             await _context.SaveChangesAsync();
 

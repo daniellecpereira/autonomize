@@ -7,7 +7,7 @@ using System.Security.Claims;
 
 namespace Autonomize.Controllers {
 
-    [Authorize(Roles = "admin")]
+
     public class UsuariosController : Controller {
         private readonly AppDbContext _context;
 

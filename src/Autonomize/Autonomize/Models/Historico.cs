@@ -31,6 +31,13 @@ namespace Autonomize.Models {
         [Display(Name = "Quantidade")]
         public int Quantidade { get; set; }
 
+        public Historico(TiposItem tipoItem, TiposAlteracao tipoAlteracao, int idItem, string nome, DateTime dataRegistro) {
+            TipoItem = tipoItem;
+            TipoAlteracao = tipoAlteracao;
+            IdItem = idItem;
+            Nome = nome;
+            DataRegistro = dataRegistro;
+        }
         public Historico(TiposItem tipoItem, TiposAlteracao tipoAlteracao, int idItem, string nome, DateTime dataRegistro, int quantidade) {
             TipoItem = tipoItem;
             TipoAlteracao = tipoAlteracao;

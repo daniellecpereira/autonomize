@@ -63,6 +63,8 @@ namespace Autonomize.Controllers {
             if (ModelState.IsValid) {
                 if (produto != null) {
                     venda.Valor = produto.PrecoVenda;
+                    var novaQuantidade = produto.QuantidadeEstoque - venda.QuantidadeVenda;
+                    produto.QuantidadeEstoque = novaQuantidade;
                 } else {
                     ModelState.AddModelError("ProdutoId", "Produto não encontrado.");
                     ViewData["ProdutoId"] = new SelectList(_context.Produtos, "Id", "Nome", venda.ProdutoId);
@@ -71,11 +73,25 @@ namespace Autonomize.Controllers {
 
                 _context.Add(venda);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("SaveCreateHistorico");
             }
 
             ViewData["ProdutoId"] = new SelectList(_context.Produtos, "Id", "Nome", venda.ProdutoId);
             return View(venda);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SaveCreateHistorico() {
+            var applicationDbContext = _context.Consumos.Include(v => v.Produto);
+            var a = await applicationDbContext.ToListAsync();
+            var venda = a.LastOrDefault();
+
+            var produto = await _context.Produtos.FindAsync(venda.ProdutoId);
+            var historico = new Historico(TiposItem.Venda, TiposAlteracao.Create, venda.Id, produto.Nome, DateTime.Now, venda.QuantidadeVenda);
+            _context.Historicos.Add(historico);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Vendas/Edit/5
@@ -104,6 +120,14 @@ namespace Autonomize.Controllers {
 
             if (ModelState.IsValid) {
                 try {
+                    var produto = await _context.Produtos.FirstOrDefaultAsync(p => p.Id == venda.ProdutoId);
+                    var historico = new Historico(TiposItem.Venda, TiposAlteracao.Edit, venda.Id, produto.Nome, DateTime.Now, venda.QuantidadeVenda);
+
+                    venda.Valor = produto.PrecoVenda;
+                    var novaQuantidade = produto.QuantidadeEstoque - venda.QuantidadeVenda;
+                    produto.QuantidadeEstoque = novaQuantidade;
+
+                    _context.Historicos.Add(historico);
                     _context.Update(venda);
                     await _context.SaveChangesAsync();
                 } catch (DbUpdateConcurrencyException) {
@@ -126,7 +150,7 @@ namespace Autonomize.Controllers {
             }
 
             var venda = await _context.Consumos
-                .Include(v => v.Produto)
+                .Include(v => v.Produto).Include(c => c.Cliente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (venda == null) {
                 return NotFound();
@@ -143,7 +167,9 @@ namespace Autonomize.Controllers {
             if (venda != null) {
                 _context.Consumos.Remove(venda);
             }
-
+            var produto = await _context.Produtos.FirstOrDefaultAsync(p => p.Id == venda.ProdutoId);
+            var historico = new Historico(TiposItem.Venda, TiposAlteracao.Delete, id, produto.Nome, DateTime.Now, venda.QuantidadeVenda);
+            _context.Historicos.Add(historico);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

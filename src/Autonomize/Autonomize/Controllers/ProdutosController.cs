@@ -46,12 +46,27 @@ namespace Autonomize.Controllers {
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,QuantidadeEstoque,Descricao,PrecoCompra,PrecoVenda,TiposProdutoId,DataCadastro,Ativo")] Produto produto) {
             if (ModelState.IsValid) {
+
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("SaveCreateHistorico");
             }
             ViewData["TiposProdutoId"] = new SelectList(_context.TipoProdutos, "Id", "Nome", produto.TiposProdutoId);
             return View(produto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SaveCreateHistorico() {
+            var a = await _context.Produtos.ToListAsync();
+
+            var produto = a.LastOrDefault();
+
+
+            var historico = new Historico(TiposItem.Produto, TiposAlteracao.Create, produto.Id, produto.Nome, DateTime.Now, produto.QuantidadeEstoque);
+            _context.Historicos.Add(historico);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Produtos/Edit/5
@@ -80,6 +95,8 @@ namespace Autonomize.Controllers {
 
             if (ModelState.IsValid) {
                 try {
+                    var historico = new Historico(TiposItem.Produto, TiposAlteracao.Edit, produto.Id, produto.Nome, DateTime.Now, produto.QuantidadeEstoque);
+                    _context.Historicos.Add(historico);
                     _context.Update(produto);
                     await _context.SaveChangesAsync();
                 } catch (DbUpdateConcurrencyException) {
@@ -119,6 +136,8 @@ namespace Autonomize.Controllers {
             if (produto != null) {
                 _context.Produtos.Remove(produto);
             }
+            var historico = new Historico(TiposItem.Produto, TiposAlteracao.Delete, produto.Id, produto.Nome, DateTime.Now);
+            _context.Historicos.Add(historico);
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
