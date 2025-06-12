@@ -129,6 +129,21 @@ namespace Autonomize.Controllers {
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteAllConfirmed(int[] ids) {
+
+
+            foreach (var item in ids) {
+                var usuario = await _context.Usuarios.FindAsync(item);
+                if (usuario != null) {
+                    _context.Usuarios.Remove(usuario);
+                }
+
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
         private bool UsuarioExists(int id) {
             return _context.Usuarios.Any(e => e.IDUsuario == id);
         }

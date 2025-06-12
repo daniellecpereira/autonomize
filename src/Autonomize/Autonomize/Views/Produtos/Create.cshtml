@@ -43,12 +43,6 @@
             <div>
                 <a asp-controller="TiposProdutos" asp-action="Index" class="btn btn-info">Criar novo tipo de produto</a>
             </div>
-
-            <div class="form-group">
-                <label asp-for="DataCadastro" class="control-label"></label>
-                <input asp-for="DataCadastro" class="form-control" placeholder="Digite a data de entrada do produto" />
-                <span asp-validation-for="DataCadastro" class="text-danger"></span>
-            </div>
             <div class="form-check form-switch">
                 <label class="form-check-label" asp-for="Ativo">
                     <input class="form-check-input" asp-for="Ativo" role="switch" /> @Html.DisplayNameFor(model => model.Ativo)

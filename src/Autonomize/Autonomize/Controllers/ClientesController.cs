@@ -114,5 +114,22 @@ namespace Autonomize.Controllers {
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteAllConfirmed(int[] ids) {
+
+
+            foreach (var item in ids) {
+                var cliente = await _context.Clientes.FindAsync(item);
+                if (cliente != null) {
+                    _context.Clientes.Remove(cliente);
+                    var historico = new Historico(TiposItem.Cliente, TiposAlteracao.Delete, item, cliente.Nome, DateTime.Now);
+                    _context.Historicos.Add(historico);
+                }
+
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
     }
 }

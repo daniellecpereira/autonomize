@@ -9,60 +9,178 @@
     <a asp-action="Create" class="btn btn-primary">+ Novo Cliente</a>
 </div>
 
-<div class="table-responsive shadow-sm rounded">
-    <table class="table table-hover table-bordered bg-white">
-        <thead class="table-dark">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CpfCnpj)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataCadastro)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CpfCnpj)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataCadastro)
-            </td>
-                <td class="d-flex">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">✏</a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">🔎</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">🗑️</a>
-                </td>
+@using (Html.BeginForm("DeleteAllConfirmed", "Cliente", FormMethod.Post))
+{
+    <div id="options-bar" style="display:none">
+        <button type="submit" class="btn btn-danger" id="delete-item">Deletar Selecionados</button>
+        <button class="btn btn-azul">Create Relatorio</button>
+    </div>
+    if(Model.Any())
+    {
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover table-bordered bg-white">
+            <thead class="table-dark">
+            <tr>
+                <th><input class="form-check-input" id="all-checkboxes" type="checkbox"></th>
+                <th onclick="ordenarTabela(1)">@Html.DisplayNameFor(model => model.Nome)</th>
+                <th onclick="ordenarTabela(2)">@Html.DisplayNameFor(model => model.Telefone)</th>
+                <th onclick="ordenarTabela(3)">@Html.DisplayNameFor(model => model.Email)</th>
+                <th onclick="ordenarTabela(4)">@Html.DisplayNameFor(model => model.CpfCnpj)</th>
+                <th onclick="ordenarTabela(5)">@Html.DisplayNameFor(model => model.Endereco)</th>
+                <th onclick="ordenarTabela(6, 'date')">@Html.DisplayNameFor(model => model.DataCadastro)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td><input class="form-check-input checkbox-item" name="ids" type="checkbox" value="@item.Id"></td>
+                <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.CpfCnpj)</td>
+                <td>@Html.DisplayFor(modelItem => item.Endereco)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataCadastro)</td>
+                    <td class="d-flex">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">✏</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">🔎</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">🗑️</a>
+                    </td>
 
-        </tr>
+            </tr>
+    }
+        </tbody>
+    </table>
+    </div>
+    } else
+    {
+        ViewData["Title"] = "Nenhum Cliente Cadastrado";
+    }
 }
-    </tbody>
-</table>
-</div>
+
+@section Scripts{
+
+<script>
+    // filtro de colunas
+    let ordemCrescente = true;
+
+    function ordenarTabela(coluna, tipo = 'text'){
+        const tabela = document.querySelector(".table");
+        const linhas = Array.from(tabela.rows).slice(1);
+
+        linhas.sort((a,b) => {
+            let valA = a.cells[coluna].innerText;
+            let valB = b.cells[coluna].innerText;
+
+            if(tipo === "date"){
+                valA = new Date(valA);
+                valB = new Date(valB);
+            }
+
+            if(valA < valB) return ordemCrescente ? -1 : 1;
+            if(valA > valB) return ordemCrescente ? 1 : -1;
+
+            return 0;
+
+        });
+
+        const corpo = tabela.tBodies[0];
+        console.log(corpo);
+        linhas.forEach(linha => corpo.appendChild(linha));
+
+        ordemCrescente = !ordemCrescente;
+    }
+
+    //checkboxes
+
+    let allCheckboxes = document.querySelector("#all-checkboxes");
+
+    let checkboxItens = document.querySelectorAll(".checkbox-item");
+
+
+    function checkedOrUnchecked(itens){
+        let countUncheckeds = 0;
+        let countCheckeds = 0;
+        itens.forEach(item =>{
+            if(item.checked === false)
+            {
+                countUncheckeds++;
+            } else
+            {
+                countCheckeds++;
+            }
+        });
+
+        if(itens.length === countCheckeds)
+        {
+            return -1;
+        }
+
+        if(itens.length === countUncheckeds)
+        {
+            return 1;
+        } else
+        {
+            return 0;
+        }
+
+    }
+
+    allCheckboxes.addEventListener("input", function(){
+
+       if(allCheckboxes.checked)
+       {
+           show(optionsBar);
+           checkboxItens.forEach(checkbox => {
+               checkbox.checked = true;
+           });
+       } else{
+           none(optionsBar);
+           checkboxItens.forEach(checkbox => {
+               checkbox.checked = false;
+           });
+       }
+
+
+    });
+
+    let optionsBar = document.querySelector("#options-bar");
+
+    function none(content){
+        content.style.display = "none";
+    }
+
+    function show (content){
+        content.style.display = "flex";
+    }
+
+
+
+    checkboxItens.forEach(checkbox =>{
+
+        checkbox.addEventListener("change", function() {
+            let todosdesmarcados = checkedOrUnchecked(checkboxItens);
+            console.log(todosdesmarcados);
+
+
+            if(todosdesmarcados === 0)
+            {
+               if(checkbox.checked)
+               {
+                   console.log("show2");
+                    show(optionsBar);
+               }
+            }else if(todosdesmarcados === 1)
+            {
+                allCheckboxes.checked = false;
+                none(optionsBar);
+            } else if(todosdesmarcados === -1)
+            {
+                allCheckboxes.checked = true;
+                console.log("show1");
+                show(optionsBar);
+            }
+        });
+    });
+</script>
+}

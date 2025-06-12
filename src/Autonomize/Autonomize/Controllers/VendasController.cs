@@ -174,6 +174,24 @@ namespace Autonomize.Controllers {
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteAllConfirmed(int[] ids) {
+
+
+            foreach (var item in ids) {
+                var venda = await _context.Consumos.FindAsync(item);
+                var produto = await _context.Produtos.FirstOrDefaultAsync(p => p.Id == venda.ProdutoId);
+                if (venda != null) {
+                    _context.Consumos.Remove(venda);
+                    var historico = new Historico(TiposItem.Venda, TiposAlteracao.Delete, item, produto.Nome, DateTime.Now);
+                    _context.Historicos.Add(historico);
+                }
+
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
         private bool VendaExists(int id) {
             return _context.Consumos.Any(e => e.Id == id);
         }
