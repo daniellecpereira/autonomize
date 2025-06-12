@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Autonomize.Models.Relatorio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Relatórios</h2>
+    <a asp-action="Create" class="btn btn-primary">+ Nova Relatório</a>
+</div>
+
+
+
+        <br/>
+<div id="index">
+
+@if(Model.Any())
+{
+    @foreach (var item in Model) {                    
+
+        <div id="campo">
+            <div id="info-campo">
+                <img src="/0707e6b2022462187b7b2dab43ed95bab6b24a66.png" alt="" />
+                <label>@Html.DisplayFor(modelItem => item.Nome)</label>
+            </div>
+            <div id="btn-vis-estoque">
+
+            <div class="dropdown">
+                <button class="btn btn-azul dropdown-toggle" id="btn-info" data-bs-toggle="dropdown">
+                    Info
+                </button>
+                <div class="dropdown-menu">
+                    <a asp-action="@item.TipoRelatorio" asp-route-id="@item.Id" class="dropdown-item">Visualizar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="dropdown-item">Deletar</a>
+                    <a asp-action="@item.TipoRelatorio" asp-route-id="@item.Id" class="dropdown-item">Imprimir</a>
+                </div>
+            </div>
+            </div> 
+        </div>
+    }
+} else
+{
+    <h2 style="text-align:center;">Você não possui Relatórios Gerados</h2>  
+}
+</div>
+

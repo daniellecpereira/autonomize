@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Autonomize</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/i18n/jquery-ui-i18n.min.js"></script>
+    <style>
+        html, body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            height: 100%;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            grid-template-rows: auto 60px;
+            grid-template-areas:
+                "navegacao conteudo"
+                "navegacao rodape";
+            min-height: 100vh;
+        }
+
+        #navegacao {
+            grid-area: navegacao;
+            background-color: #2a74c0;
+            padding: 1rem;
+            color: white;
+        }
+
+            #navegacao .navbar-brand {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+                #navegacao .navbar-brand img {
+                    height: 32px;
+                    max-width: 100%;
+                }
+
+            #navegacao .navbar-toggler {
+                border: 1px solid #fff;
+                margin-bottom: 1rem;
+            }
+
+            #navegacao .nav-link {
+                color: black;
+                font-size: 1rem;
+                padding: 0.5rem 0;
+            }
+
+                #navegacao .nav-link:hover,
+                #navegacao .nav-link.active {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    font-weight: bold;
+                }
+
+        #conteudo {
+            grid-area: conteudo;
+            padding: 2rem;
+            background-color: #f5f7fa;
+        }
+
+        #rodape {
+            grid-area: rodape;
+            background-color: #e1e4e8;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="navegacao">
+            <nav class="navbar navbar-expand-sm navbar-dark flex-column align-items-start p-0">
+                <button class="navbar-toggler" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand mb-4" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo-bfe3f6.png" alt="Autonomize Logo">
+                </a>
+                    @if(User.Identity.IsAuthenticated)
+                    {
+
+                <ul class="navbar-nav flex-column w-100">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Vendas" asp-action="Index">Vendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Produtos" asp-action="Index">Produtos</a>
+                    </li>
+                    @if(User.IsInRole("admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Usuarios" asp-action="Index">Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Relatorios" asp-action="Index">Relatórios</a>
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Privacy">Sobre</a>
+                    </li>
+                </ul>
+                }
+            </nav>
+        </div>
+
+        <div id="conteudo">
+            <div class="d-flex justify-content-end align-items-center gap-3 mb-3">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <span class="text-dark">Olá, <strong>@User.Identity.Name</strong></span>
+                    <form asp-controller="Usuarios" asp-action="Logout" method="post" class="d-inline">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-outline-danger btn-sm">Sair</button>
+                    </form>
+                }
+                else
+                {
+                    <a class="btn btn-outline-primary btn-sm" asp-controller="Usuarios" asp-action="Login">Login</a>
+                }
+
+            </div>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer id="rodape" class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2025 - Autonomize - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

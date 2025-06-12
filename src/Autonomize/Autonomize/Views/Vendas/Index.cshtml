@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Autonomize.Models.Venda>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Vendas</h2>
+    <a asp-action="Create" class="btn btn-primary">+ Nova Venda</a>
+</div>
+<div class="table-responsive shadow-sm rounded">
+<table class="table table-hover table-bordered bg-white">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.QuantidadeVenda)
+			</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                Valor Total
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.QuantidadeVenda)
+			</td>
+            <td>
+                @(item.Valor.ToString("C"))
+            </td>   
+            <td>
+                @((item.Valor * item.QuantidadeVenda).ToString("C"))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produto.Nome)
+            </td>
+            <td>
+                <div class="d-flex gap-2">                  
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">✏</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">🔎</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">🗑️</a>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

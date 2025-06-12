@@ -1,0 +1,89 @@
+﻿@model Autonomize.Models.Relatorio
+
+
+@{
+    ViewData["Title"] = "Cliente";
+    var ListaClientes = ViewBag.Cliente;    
+    var DetalhesClientes = ViewBag.DetalhesClientes;
+}
+
+
+<div style="text-align:center;">    
+    <h1>Relatório de Clientes</h1>
+    <p><strong>Filtros:</strong></p> <b>Data de Inicio:</b> @Model.DataInicio, </br><b>Data Final:</b>  @Model.DataFinal
+    <hr />
+
+    <h2>Relatório:</h2>
+    <table class="table table-striped table-bordered table-sm">
+        <thead class="thead">
+            <tr>
+                <th scope="col" title="Identificador único de Cliente">Id</th>
+                <th scope="col" title="Nome Ou Razão Social">Nome</th>
+                <th scope="col" title="Telefone">Contato</th>
+                <th scope="col" title="Email">E-mail</th>
+                <th scope="col" title="Endereço">Endereço</th>
+                <th scope="col" title="Data de Ultima Compra">Dt Ult Compra</th>
+                <th scope="col" title="Data de Cadastro">Data de Cadastro</th>
+                <th scope="col" title="Valor máximo em compras">Valor Total</th>
+                <th scope="col" title="Valor Mais alto em única compra de cliente">Valor M/Alto em Compra Única</th>
+                <th scope="col" title="Produto que cliente mais comprou">Produto M/Comprado</th>
+                <th scope="col" title="Quantidade comprada de produto mais comprado">Quantidade Produto M/Comprado</th>  
+            </tr>
+        </thead>
+        <tbody>
+
+        @for (int i = 0; i < ListaClientes.Count; i++)
+        {
+            var lc = ListaClientes[i];
+            <tr>
+                <th scope="row" >@lc.Id </th>
+                <td >@lc.Nome</td>
+                <td >@lc.Telefone</td>
+                <td >@lc.Email </td>
+                <td >@lc.Endereco</td>                
+                <td>@DetalhesClientes.DataUltimaCompra[i].ToString("dd/MM/yyyy")</td>
+                <td>@lc.DataCadastro.ToString("dd/MM/yyyy") </td>
+                <td>@DetalhesClientes.ValorMaxComprado[i]</td>
+                <td>@DetalhesClientes.MaiorCompraUnica[i]</td>                   
+                <td>@DetalhesClientes.ProdutoMaisComprado[i]</td>                   
+                <td>@DetalhesClientes.QuantidadeProdutoMaisComprado[i]</td>
+            </tr>
+        }           
+    
+        </tbody>
+    </table>
+    
+
+ <!--   <table class="table table-striped table-bordered table-sm">
+        <thead class="thead">
+            <tr>
+                <th scope="col" title="Identificador único de Cliente">Id</th>
+                <th scope="col" title="Nome Ou Razão Social">Nome</th>
+                <th scope="col" title="Valor máximo em compras">Valor Total</th>
+                <th scope="col" title="Valor Mais alto em única compra de cliente">Valor M/Alto em Compra Única</th>
+                <th scope="col" title="Produto que cliente mais comprou">Produto M/Comprado</th>
+                <th scope="col" title="Quantidade comprada de produto mais comprado">Quantidade Produto M/Comprado</th>                
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (int i = 0; i < ListaClientes.Count; i++)
+            {
+                var lc = ListaClientes[i];
+                <tr>
+                    <th scope="row">@lc.Id </th>
+                    <td>@lc.Nome</td>
+                    <td>@DetalhesClientes.ValorMaxComprado[i]</td>
+                    <td>@DetalhesClientes.MaiorCompraUnica[i]</td>                   
+                    <td>@DetalhesClientes.ProdutoMaisComprado[i]</td>                   
+                    <td>@DetalhesClientes.QuantidadeProdutoMaisComprado[i]</td>                   
+                </tr>
+            }
+
+        </tbody>
+    </table> -->
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

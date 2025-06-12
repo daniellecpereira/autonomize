@@ -1,0 +1,140 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 85%;
+    grid-template-rows: auto 60px;
+    grid-template-areas:
+        "navegacao conteudo"
+        "navegacao rodape";
+    min-height: 100vh;
+}
+
+#navegacao {
+    grid-area: navegacao;
+    background-color: #2a74c0;
+}
+
+#conteudo {
+    grid-area: conteudo;
+    padding: 1rem;
+    background-color: #e1e4e8;
+}
+
+#rodape {
+    grid-area: rodape;
+    background-color: #e1e4e8;
+    text-align: center;
+    line-height: 60px;
+}
+
+#teste {
+    background-color: #2a74c0;
+}
+.row {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+}
+.card {
+    background-color: #e1e4e8;
+}
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0,3rem;
+}
+
+/**/
+
+table th {
+    cursor: pointer;
+}
+
+.btn-azul {
+    background-color: #004AAD;
+    color: white;
+    border: none;
+}
+
+    .btn-azul:hover {
+        background-color: #2C9CDC;
+        color: white;
+    }
+
+.btn-custom-azul-claro {
+    background-color: #4AB2F6;
+    color: white;
+    border: none;
+}
+
+    .btn-custom-azul-claro:hover {
+        background-color: #2C9CDC;
+        color: white;
+    }
+
+td.img {
+    height: 10px;
+}
+
+td#view-button {
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+
+#index {
+    display: grid;
+    gap: 24px;
+}
+
+#campo {
+    padding: 8px 30px 8px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#btn-vis-estoque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #btn-vis-estoque .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+#info-campo {
+    display: flex;
+}
+
+    #info-campo label {
+        margin-left: 24px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    #info-campo img {
+        background-color: #e3e3e3;
+    }

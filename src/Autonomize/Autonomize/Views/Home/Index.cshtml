@@ -1,0 +1,68 @@
+﻿@model Autonomize.Models.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Visão Geral</h2>
+
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Total de Produtos</h6>
+                <p class="fs-4 fw-bold">@Model.TotalProdutos</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Alertas de Estoque</h6>
+                <p class="fs-4 text-danger">--</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Vendas Recentes</h6>
+                <p class="fs-4">--</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Movimento de Estoque</h6>
+                <p>...</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Categoria</h6>
+                <p>--</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Clientes</h6>
+                <p>@Model.TotalClientes</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Financeiro</h6>
+                <p>R$ @Model.ValorTotalVendido.ToString("N2")</p>
+            </div>
+        </div>
+    </div>
+</div>

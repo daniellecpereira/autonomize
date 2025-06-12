@@ -1,0 +1,77 @@
+﻿@model Autonomize.Models.Relatorio
+
+
+@{
+    ViewData["Title"] = "Vendas";
+    var ListaVendas = ViewBag.ListaVendas;
+    var DadosRelatorio = ViewBag.DadosRelatorio;
+
+}
+
+
+<div style="text-align:center;">    
+    <h1>Relatório de Vendas</h1>
+    <p><strong>Filtros:</strong></p> <b>Data de Inicio:</b> @Model.DataInicio, </br><b>Data Final:</b>  @Model.DataFinal
+    <hr />
+
+    <h2>Relatório:</h2>
+    <table class="table table-striped table-bordered table-sm">
+        <thead class="thead">
+            <tr>
+                <th scope="col" title="Identificador único de Venda">Id</th>
+                <th scope="col" title="Nome de Produto Vendido">Nome</th>
+                <th scope="col" title="Valor de venda unitário de produto.">Preço de Venda</th>
+                <th scope="col" title="Quantidade de produtos vendida.">Quantidade Vendida</th>
+                <th scope="col" title="Faturamento considerando os acréscimos e descontos não tributáveis ou administrativos.">Fat. Bruto</th>
+                <th scope="col" title="Valor total para repor itens que foram vendidos.">Reposição</th>
+                <th scope="col" title="Data de Venda">Data da Venda</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        @for (int i = 0; i < ListaVendas.Count; i++)
+        {
+            var lv = ListaVendas[i];
+            <tr>
+                <th scope="row" >@lv.Id </th>
+                <td >@lv.Produto.Nome</td>
+                    <td>R$@lv.Produto.PrecoVenda</td>
+                <td >@lv.QuantidadeVenda </td>
+                <td >R$@DadosRelatorio.FaturamentoBruto[i]</td>
+                <td >R$@DadosRelatorio.Reposicao[i]</td>
+                <td >@lv.Data.ToString("dd/MM/yyyy") </td>
+            </tr>
+        }
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Faturamento Bruto Total</p>                   
+                </th>
+                    <td>
+                        <p><b>R$@DadosRelatorio.TotalFaturamentoBruto</b></p>                                   
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Reposição Total</p>
+                </th>
+                    <td>
+                        <p><b>R$@DadosRelatorio.TotalReposicao</b></p>                    
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Quantidade Total Vendida</p>
+                </th>
+                    <td>
+                        <p><b>@DadosRelatorio.TotalQntVendida</b></p>
+                    </td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

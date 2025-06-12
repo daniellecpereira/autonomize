@@ -1,0 +1,32 @@
+﻿@model List<Historico>
+@{
+    var relatorio = ViewBag.Relatorio as Relatorio;
+}
+
+<h1>Detalhes - @relatorio.Nome</h1>
+
+<p><strong>Filtro: </strong>@relatorio.TipoItem, @relatorio.TipoAlteracao, @relatorio.DataInicio.ToShortDateString(), @relatorio.DataFinal.ToShortDateString()</p>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Alteração</th>
+            <th>Data</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Nome </td>
+                <td>@item.TipoItem </td>
+                <td>@item.TipoAlteracao </td>
+                <td>@item.DataRegistro </td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@relatorio?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
