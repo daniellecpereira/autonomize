@@ -24,10 +24,10 @@ jobs:
           dotnet-version: '9.x'
 
       - name: Build with dotnet
-        run: dotnet build src/Autonomize/Autonomize/Autonomize.csproj --configuration Release
+        run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish src/Autonomize/Autonomize/Autonomize.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -54,9 +54,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_752556CF85D448A68385BE0ED20F728E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_85D5D7AE4B164B68BB7828E23F783F22 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E467B51B31904B158EDD8C8F2F08685B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9D0AA34C37474F42B1630C9EE8EA07FE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_051D9D41D3624F35970C942C782B449F }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A526FC5FA8EA4732809A63B9B49B7C84 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
