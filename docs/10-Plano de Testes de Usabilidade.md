@@ -12,31 +12,23 @@
 
 ## Participantes
 
-Foram selecionados participantes com os seguintes perfis, visando representar os principais tipos de usuários do sistema:
+Para a realização dos testes de usabilidade, foram selecionados usuários que representam os dois perfis disponíveis na aplicação Autonomize: Administrador e Usuário Comum.
 
-**Critérios para selecionar participantes:**
-
-•	Gestores de estoque e vendas com experiência prévia em sistemas similares.
-
-•	Funcionários do setor administrativo responsáveis pela geração de relatórios.
-
-•	Vendedores que realizam atendimento direto a clientes.
-
-•	Novos colaboradores sem experiência prévia com o sistema.
-
-•	Pessoas com diferentes níveis de familiaridade com tecnologia.
+Esta escolha está alinhada com o público-alvo da plataforma, que visa oferecer uma solução acessível e intuitiva para autônomos e pequenos empreendedores, facilitando a gestão financeira e de estoque de seus negócios.
 
 
+**Perfil dos Participantes**
 
-**Quantidade recomendada:**
+- **Administradores:** Usuários responsáveis pela configuração geral do sistema, gestão de permissões, alertas e controle avançado do estoque e finanças.
+  
+- **Usuários Comuns:** Profissionais que utilizam o sistema para atividades operacionais do dia a dia, como cadastro, movimentação de estoque, vendas e consultas de relatórios.
 
-•	3 gestores/administradores
 
-•	3 vendedores
+**Características gerais dos participantes:**
 
-•	2 estoquistas
-
-•	2 novos colaboradores sem experiência prévia
+- Administrador e Usuário Comum;
+- Possuem acesso à internet estável;
+- Variedade de níveis de familiaridade com tecnologia, abrangendo desde usuários experientes até novatos.
 
 
 
@@ -44,9 +36,9 @@ Foram selecionados participantes com os seguintes perfis, visando representar os
 
 **Cenário 1: Cadastro e Gestão de Perfil**
 
-**Objetivo:** Avaliar a facilidade e intuitividade do processo de cadastro de usuário e gestão de perfil.
+**Objetivo:** Avaliar a facilidade e a intuitividade no processo de cadastro e atualização de perfil dos usuários, tanto Administradores quanto Usuários Comuns.
 
-**Contexto:** Um novo funcionário precisa acessar o sistema pela primeira vez, criar seu perfil de usuário e posteriormente atualizar algumas informações pessoais.
+**Contexto:** Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema
 
 
 **Tarefa(s):**
