@@ -60,13 +60,35 @@
 
 ## Relatório de testes de software
 
-Apresente e discuta detalhadamente os resultados obtidos nos testes realizados, destacando tanto os pontos fortes quanto as fragilidades identificadas na solução. Explique como os aspectos positivos contribuem para o desempenho e a usabilidade do sistema, e como os pontos fracos impactam sua eficácia.
+### Introdução
 
-Descreva as principais falhas detectadas durante os testes, fornecendo exemplos concretos e evidências que sustentem essas observações. Explicite os impactos dessas falhas na experiência do usuário, na funcionalidade do sistema e nos objetivos do projeto.
+Este relatório apresenta os resultados obtidos nos testes realizados na aplicação, com base nos requisitos funcionais (RF) estabelecidos para o sistema Autonomize. O objetivo é validar o correto funcionamento das funcionalidades implementadas e identificar eventuais melhorias ou ajustes necessários.
 
-Com base nessas análises, detalhe as estratégias que o grupo pretende adotar para corrigir as deficiências e aprimorar a solução nas próximas iterações. Inclua ações específicas, como ajustes no código, modificações na interface, otimizações de desempenho ou melhorias na acessibilidade e usabilidade.
+### Testes Realizados
 
-Por fim, apresente e/ou proponha as melhorias a partir dos testes realizados, destacando os ganhos obtidos e como essas alterações contribuem para a evolução do projeto.
+Cada funcionalidade foi testada de acordo com critérios de êxito bem definidos, envolvendo ações comuns do usuário final, validação de interface e comportamento esperado do sistema.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+### Resultados Obtidos
+
+Todos os testes realizados indicaram que as funcionalidades estão funcionando corretamente. Os critérios de êxito foram atendidos em sua totalidade, não sendo detectadas falhas ou comportamentos inesperados durante os testes.
+
+### Impacto na Experiência do Usuário
+
+•	As funcionalidades respondem rapidamente e de forma previsível;
+•	Os dados são processados e atualizados corretamente;
+•	A navegação entre módulos é fluida e sem travamentos;
+Esse desempenho contribui diretamente para a usabilidade, confiabilidade e confiança no sistema por parte dos usuários finais.
+
+### Estratégias de Aprimoramento
+
+Embora nenhum erro tenha sido identificado, a equipe identificou possíveis melhorias com base nas discussões durante o desenvolvimento e testes:
+•	Implementar histórico visual para movimentações de estoque, com gráficos simples;
+•	Criar um painel de notificações centralizado, permitindo melhor gerenciamento de alertas de estoque e prazos;
+•	Permitir personalização de relatórios financeiros, como filtros por período, categoria e tipo de movimentação;
+
+### Conclusão
+
+Os testes de software realizados demonstraram que o sistema Autonomize encontra-se funcional e estável. O desempenho satisfatório nas funcionalidades testadas evidenciam a maturidade da aplicação nesta etapa do projeto.
+
+Apesar dos bons resultados, a equipe pretende seguir com o aprimoramento contínuo do sistema, agregando valor ao usuário por meio de melhorias pontuais e incremento da qualidade de uso, desempenho e acessibilidade da aplicação.
+
