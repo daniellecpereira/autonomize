@@ -14,11 +14,11 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 1**: Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema       
 | **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |      60              |                8                 |     sim            |      Nenhum                  |      Confiante                        |                     |      
-| Usuário 2    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3    |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5    |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1    |      50              |                6                 |     sim            |      Nenhum                  |      Confiante                        |                     |      
+| Usuário 2    |     56               |              8                   |     sim            |       Nenhum                 |      Satisfeito                        |                     |      
+| Usuário 3    |      52              |             6                    |  sim               |     Nenhum                   |    Satisfeito                          |                     |  
+| Usuário 4    |      54              |              7                   |   sim              |    Nenhum                    |    Neutro                          |                     | 
+| Usuário 5    |      70              |             9                    |      sim           |    Nenhum                    |     Satisfeito                          |                     | 
 
 **Cenário 2**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
