@@ -74,21 +74,20 @@ Todos os testes realizados indicaram que as funcionalidades estão funcionando c
 
 ### Impacto na Experiência do Usuário
 
-•	As funcionalidades respondem rapidamente e de forma previsível;
-•	Os dados são processados e atualizados corretamente;
-•	A navegação entre módulos é fluida e sem travamentos;
+- As funcionalidades respondem rapidamente e de forma previsível;
+- Os dados são processados e atualizados corretamente;
+- A navegação entre módulos é fluida e sem travamentos;
 Esse desempenho contribui diretamente para a usabilidade, confiabilidade e confiança no sistema por parte dos usuários finais.
 
 ### Estratégias de Aprimoramento
 
 Embora nenhum erro tenha sido identificado, a equipe identificou possíveis melhorias com base nas discussões durante o desenvolvimento e testes:
-•	Implementar histórico visual para movimentações de estoque, com gráficos simples;
-•	Criar um painel de notificações centralizado, permitindo melhor gerenciamento de alertas de estoque e prazos;
-•	Permitir personalização de relatórios financeiros, como filtros por período, categoria e tipo de movimentação;
+- Implementar histórico visual para movimentações de estoque, com gráficos simples;
+- Criar um painel de notificações centralizado, permitindo melhor gerenciamento de alertas de estoque e prazos;
+- Permitir personalização de relatórios financeiros, como filtros por período, categoria e tipo de movimentação;
 
 ### Conclusão
 
 Os testes de software realizados demonstraram que o sistema Autonomize encontra-se funcional e estável. O desempenho satisfatório nas funcionalidades testadas evidenciam a maturidade da aplicação nesta etapa do projeto.
-
 Apesar dos bons resultados, a equipe pretende seguir com o aprimoramento contínuo do sistema, agregando valor ao usuário por meio de melhorias pontuais e incremento da qualidade de uso, desempenho e acessibilidade da aplicação.
 
