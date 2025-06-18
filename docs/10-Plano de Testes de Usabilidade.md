@@ -1,46 +1,34 @@
 # Plano de Testes de Usabilidade 
 
-## Definição do(s) objetivo(s)
+## Objetivos Avaliados
 
-• Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades.
-
-•	Avaliar a eficiência da interface para consulta e movimentação de estoque.
-
-•	Identificar possíveis barreiras na navegação e interação com o sistema de geração de relatórios.
-
-•	Testar a clareza dos alertas automáticos e notificações do sistema.
-
-•	Avaliar a facilidade de uso nas funcionalidades de gestão de clientes e vendas.
-
-•	Verificar se as restrições de permissão são compreensíveis para os usuários.
-
-
-## Seleção dos participantes
-
-
-**Critérios para selecionar participantes:**
-
-•	Gestores de estoque e vendas com experiência prévia em sistemas similares.
-
-•	Funcionários do setor administrativo responsáveis pela geração de relatórios.
-
-•	Vendedores que realizam atendimento direto a clientes.
-
-•	Novos colaboradores sem experiência prévia com o sistema.
-
-•	Pessoas com diferentes níveis de familiaridade com tecnologia.
+- Verificar se os usuários conseguem realizar operações de cadastro e gestão de perfil sem dificuldades.
+- Avaliar a eficiência da interface para consulta e movimentação de estoque.
+- Identificar possíveis barreiras na navegação e interação com o sistema de geração de relatórios.
+- Avaliar a facilidade de uso nas funcionalidades de gestão de clientes e vendas.
+- Verificar se as restrições de permissão são compreendidas pelos usuários.
 
 
 
-**Quantidade recomendada:**
+## Participantes
 
-•	3 gestores/administradores
+Para a realização dos testes de usabilidade, foram selecionados usuários que representam os dois perfis disponíveis na aplicação Autonomize: Administrador e Usuário Comum.
 
-•	3 vendedores
+Esta escolha está alinhada com o público-alvo da plataforma, que visa oferecer uma solução acessível e intuitiva para autônomos e pequenos empreendedores, facilitando a gestão financeira e de estoque de seus negócios.
 
-•	2 estoquistas
 
-•	2 novos colaboradores sem experiência prévia
+**Perfil dos Participantes**
+
+- **Administradores:** Usuários responsáveis pela configuração geral do sistema, gestão de permissões, alertas e controle avançado do estoque e finanças.
+  
+- **Usuários Comuns:** Profissionais que utilizam o sistema para atividades operacionais do dia a dia, como cadastro, movimentação de estoque, vendas e consultas de relatórios.
+
+
+**Características gerais dos participantes:**
+
+- Administrador e Usuário Comum;
+- Possuem acesso à internet estável;
+- Variedade de níveis de familiaridade com tecnologia, abrangendo desde usuários experientes até novatos.
 
 
 
@@ -48,9 +36,9 @@
 
 **Cenário 1: Cadastro e Gestão de Perfil**
 
-**Objetivo:** Avaliar a facilidade e intuitividade do processo de cadastro de usuário e gestão de perfil.
+**Objetivo:** Avaliar a facilidade e a intuitividade no processo de cadastro e atualização de perfil dos usuários, tanto Administradores quanto Usuários Comuns.
 
-**Contexto:** Um novo funcionário precisa acessar o sistema pela primeira vez, criar seu perfil de usuário e posteriormente atualizar algumas informações pessoais.
+**Contexto:** Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema
 
 
 **Tarefa(s):**
