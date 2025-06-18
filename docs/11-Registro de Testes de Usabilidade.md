@@ -3,7 +3,7 @@
 ## Perfil dos usuários que participaram do teste
 - Usuário 1: Administrador, possui acesso à internet estável, familiaridade avançada com tecnologia
 - Usuário 2: Administrador, possui acesso à internet estável, familiaridade intermediária com tecnologia 
-- Usuário 3: Usuário Comum, possui acesso à internet estável, familiaridade avançada com tecnologia 
+- Usuário 3: Administrador, possui acesso à internet estável, familiaridade avançada com tecnologia 
 - Usuário 4: Usuário Comum, possui acesso à internet estável, familiaridade avançada com tecnologia
 - Usuário 5: Usuário Comum, possui acesso à internet estável, familiaridade básica com tecnologia
 
@@ -14,31 +14,30 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 1**: Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema       
 | **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |      50              |                6                 |     sim            |      Nenhum                  |      Confiante                        |                     |      
-| Usuário 2    |     56               |              8                   |     sim            |       Nenhum                 |      Satisfeito                        |                     |      
-| Usuário 3    |      52              |             6                    |  sim               |     Nenhum                   |    Satisfeito                          |                     |  
-| Usuário 4    |      54              |              7                   |   sim              |    Nenhum                    |    Neutro                          |                     | 
-| Usuário 5    |      70              |             9                    |      sim           |    Nenhum                    |     Satisfeito                          |                     | 
+| Usuário 1    |      50              |                6                 |     sim            |      0                  |      Confiante                        |                     |      
+| Usuário 2    |     56               |              6                   |     sim            |       0                 |      Satisfeito                        |                     |      
+| Usuário 3    |      52              |             6                    |  sim               |     0                   |    Satisfeito                          |                     |  
+| Usuário 4    |      54              |              6                   |   sim              |    0                    |    Neutro                          |                     | 
+| Usuário 5    |      70              |             6                    |      sim           |    0                    |     Satisfeito                          |                     | 
 
-**Cenário 2**:         
+**Cenário 2**: Um usuário precisa verificar a quantidade disponível de um produto específico, registrar a entrada de novas unidades e em seguida uma saída para atender a uma requisição.     
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |     68               |              9                   |      sim           |       0                 |            Satisfeito                  |                     |      
+| Usuário 2   |     71               |               9                  |      sim           |      0                  |       Satisfeito                       |                     |      
+| Usuário 3   |        66            |             9                    |         sim        |      0                  |     Satisfeito                         |                     |  
+| Usuário 4   |     73               |          9                       |      sim           |      0                  |          Satisfeito                    |                     | 
+| Usuário 5   |         109           |          11                       |    sim             |      1                  |        Satisfeito                      |                     | 
 
-**Cenário 3**:         
+**Cenário 3**: Um Administrador precisa analisar o desempenho financeiro do mês anterior, verificando receitas, despesas e lucro líquido, além de identificar os produtos mais vendidos em um período específico.   
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |      4              |          2                       |      sim           |            0            |             Confiante                 |                     |      
+| Usuário 2   |        5            |           2                      |       sim          |              0          |            Confiante                  |                     |
+| Usuário 3   |        5            |           2                      |       sim          |              0          |            Confiante                  |                     |   
 
-**Cenário 4**:         
+
+**Cenário 4**:  Um administrador precisa configurar níveis mínimos de estoque para produtos críticos e verificar alertas existentes sobre produtos próximos do vencimento.     
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
 | Usuário 1   |                    |                                 |                 |                        |                              |                     |      
