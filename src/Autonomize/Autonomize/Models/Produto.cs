@@ -1,9 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.InteropServices;
 
-namespace Autonomize.Models {
+namespace Autonomize.Models
+{
     [Table("Produtos")]
-    public class Produto {
+    public class Produto
+    {
         [Key]
         public int Id { get; set; }
 
@@ -30,24 +33,26 @@ namespace Autonomize.Models {
         public TiposProduto? TiposProduto { get; set; }
 
         [Display(Name = "Data de Cadastro")]
-        public DateTime DataCadastro { get; set; } = DateTime.Now;
+        public DateTime DataCadastro { get; set; } = GetHorarioBrasilia();
 
         public bool Ativo { get; set; }
 
         [Display(Name = "Valor total de compra em estoque")]
         [NotMapped]
-        public int ValorTotalCompra {
-            get {
-                return QuantidadeEstoque * PrecoCompra;
-            }
-        }
+        public int ValorTotalCompra => QuantidadeEstoque * PrecoCompra;
 
         [Display(Name = "Valor preterido de venda")]
         [NotMapped]
-        public int ValorTotalVenda {
-            get {
-                return QuantidadeEstoque * PrecoVenda;
-            }
+        public int ValorTotalVenda => QuantidadeEstoque * PrecoVenda;
+
+        private static DateTime GetHorarioBrasilia()
+        {
+            var timeZoneId = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+                ? "E. South America Standard Time"
+                : "America/Sao_Paulo";
+
+            var horarioBrasilia = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
+            return TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, horarioBrasilia);
         }
     }
 }
