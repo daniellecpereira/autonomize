@@ -1,4 +1,5 @@
-﻿using Autonomize.Models;
+﻿using System.Runtime.InteropServices;
+using Autonomize.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -40,16 +41,22 @@ namespace Autonomize.Controllers {
         }
 
         // POST: Produtos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,QuantidadeEstoque,Descricao,PrecoCompra,PrecoVenda,TiposProdutoId,DataCadastro,Ativo")] Produto produto) {
-            if (ModelState.IsValid) {
+        public async Task<IActionResult> Create([Bind("Id,Nome,QuantidadeEstoque,Descricao,PrecoCompra,PrecoVenda,TiposProdutoId,Ativo")] Produto produto)
+        {
+            if (ModelState.IsValid)
+            {
+               
+                var timeZoneId = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
+                    ? "E. South America Standard Time"
+                    : "America/Sao_Paulo";
+                var tz = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
+                produto.DataCadastro = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz);
 
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
-                return Redirect("SaveCreateHistorico");
+                return RedirectToAction("SaveCreateHistorico");
             }
             ViewData["TiposProdutoId"] = new SelectList(_context.TipoProdutos, "Id", "Nome", produto.TiposProdutoId);
             return View(produto);
