@@ -1,0 +1,82 @@
+﻿@model Autonomize.Models.Relatorio
+
+
+@{
+    ViewData["Title"] = "Relatório | Produtos";
+    var DetalhesProdutos = ViewBag.DetalhesProdutos;
+    var Produtos = Model.Produtos;
+}
+
+
+<div style="text-align:center;">
+    <h1>Relatório de Clientes</h1>
+    @* <p><strong>Filtros:</strong></p> <b>Data de Inicio:</b> @Model.DataInicio, </br><b>Data Final:</b>  @Model.DataFinal *@
+    <hr />
+
+    <h2>Relatório:</h2>
+    <table class="table table-striped table-bordered table-sm">
+        <thead class="thead">
+            <tr>
+                <th scope="col" title="Identificador único de Produtos">Id</th>
+                <th scope="col" title="Nome de Produto">Nome</th>
+                <th scope="col" title="Descrição">Descrição</th>
+                <th scope="col" title="Tipo de Produto">Tipo de Produto</th>
+                <th scope="col" title="Quantidade Máxima em estoque">Quantidade</th>
+                <th scope="col" title="Preço de compra">Preço de Compra</th>
+                <th scope="col" title="Preço de venda">Preço de Venda</th>
+                <th scope="col" title="Item está ativo ou não.">Ativo</th>
+                <th scope="col" title="Data de Cadastro">Data de Cadastro</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (int i = 0; i < Produtos.Count; i++)
+            {
+                var prod = Produtos[i];
+                <tr>
+                    <th scope="row">@prod.Id </th>
+                    <td>@prod.Nome</td>
+                    <td>@prod.Descricao</td>
+                    <td>@prod.TiposProduto</td>
+                    <td>@prod.QuantidadeEstoque</td>
+                    <td>@prod.PrecoCompra </td>
+                    <td>@prod.PrecoVenda</td>
+                    <td>@prod.Ativo</td>
+                    <td>@prod.DataCadastro.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Quantidade Total de Produtos</p>
+                </th>
+                <td>
+                    <p><b>@DetalhesProdutos.QuantidadeTotal</b></p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Preço Total para Venda</p>
+                </th>
+                <td>
+                    <p><b>R$@DetalhesProdutos.ValorTotalVenda</b></p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="6">
+                    <p>Despesa Total</p>
+                </th>
+                <td>
+                    <p><b>@DetalhesProdutos.ValorTotalCompra</b></p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

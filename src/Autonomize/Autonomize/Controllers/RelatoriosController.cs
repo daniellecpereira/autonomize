@@ -176,23 +176,43 @@ namespace Autonomize.Controllers {
         }
 
 
-        //public async Task<IActionResult> Produtos(int? id) {
-        //    if (id == null) {
-        //        return NotFound();
-        //    }
+        public async Task<IActionResult> Produtos(int? id) {
+            if (id == null) {
+                return NotFound();
+            }
 
-        //    var relatorio = await _context.Relatorios
-        //        .FirstOrDefaultAsync(m => m.Id == id);
+            var relatorio = await _context.Relatorios
+                .FirstOrDefaultAsync(m => m.Id == id);
 
-        //    if (relatorio != null) {
-        //        return NotFound();
-        //    }
+            if (relatorio != null) {
+                return NotFound();
+            }
 
-        //    if(relatorio.TipoRelatorio == TiposRelatorio.Produtos) {
+            if (relatorio.TipoRelatorio == TiposRelatorio.Produtos) {
 
-        //        return View();
-        //    }
-        //}
+                var produtos = new List<Produto>();
+                var quantidadeTotal = 0;
+                decimal valorTotalVenda;
+                decimal valorTotalCompra;
+                for (int i = 0; i < produtos.Capacity; i++) {
+                    var produto = await _context.Produtos.Where(p => p.Id == relatorio.Itens[i]).FirstOrDefaultAsync();
+                    produtos.Add(produto);
+                }
+
+                ViewBag.DetalhesProduto = new {
+                    QuantidadeTotal = quantidadeTotal,
+                    ValorTotalVenda = produtos.Sum(p => p.PrecoVenda),
+                    ValorTotalCompra = produtos.Sum(p => p.PrecoCompra)
+                };
+
+
+                return View(produtos);
+            }
+
+            return View(relatorio);
+        }
+
+
         // GET: Relatorios/Vendas/5
         public async Task<IActionResult> Vendas(int? id) {
             if (id == null) {
