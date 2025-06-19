@@ -2,7 +2,7 @@
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS ASP.NET CORE é um projeto estático, logo pode ser de forma online...
+[Solução](https://autonomize-eyaegphbfvaadjgs.brazilsouth-01.azurewebsites.net)
 
 ## Histórico de versões
 
