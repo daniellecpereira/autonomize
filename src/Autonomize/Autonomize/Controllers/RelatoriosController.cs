@@ -175,6 +175,24 @@ namespace Autonomize.Controllers {
             return View();
         }
 
+
+        //public async Task<IActionResult> Produtos(int? id) {
+        //    if (id == null) {
+        //        return NotFound();
+        //    }
+
+        //    var relatorio = await _context.Relatorios
+        //        .FirstOrDefaultAsync(m => m.Id == id);
+
+        //    if (relatorio != null) {
+        //        return NotFound();
+        //    }
+
+        //    if(relatorio.TipoRelatorio == TiposRelatorio.Produtos) {
+
+        //        return View();
+        //    }
+        //}
         // GET: Relatorios/Vendas/5
         public async Task<IActionResult> Vendas(int? id) {
             if (id == null) {
