@@ -178,50 +178,35 @@ Esta escolha está alinhada com o público-alvo da plataforma, que visa oferecer
 •	O usuário compreende o processo sem necessidade de ajuda externa.
 
 
-**Cenário 5: Cadastro de Cliente e Registro de Venda**
+**Cenário 5: Cadastro de Cliente**
 
-**Objetivo:** Avaliar a integração entre o cadastro de clientes e o registro de vendas com atualização automática do estoque.
+**Objetivo:** Avaliar a clareza, fluidez e eficiência da funcionalidade de cadastro de clientes na plataforma, garantindo que usuários consigam registrar novos clientes com facilidade.
 
-**Contexto:** Um vendedor precisa cadastrar um novo cliente e registrar uma venda para este cliente, verificando se o estoque é atualizado automaticamente.
+**Contexto:** Um usuário precisa cadastrar um novo cliente para efetuar uma venda futura. Ele acessa o sistema e preenche os dados necessários para que o cliente fique registrado no banco de dados.
+
 
 **Tarefa(s):**
 
-•	Acessar o sistema com credenciais de vendedor.
+•	Acessar o módulo de “Clientes”
 
-•	Navegar até o módulo de cadastro de clientes.
+•	Clicar na opção “Novo Cliente”
 
-•	Criar um novo cadastro com nome, telefone, email e endereço.
+•	Preencher os campos obrigatórios: nome, e-mail, telefone e endereço.
 
 •	Salvar o cadastro do cliente.
 
-•	Iniciar um novo registro de venda para este cliente.
-
-•	Adicionar 3 produtos diferentes ao carrinho de compras.
-
-•	Escolher a forma de pagamento como "Cartão de Crédito".
-
-•	Finalizar a venda.
-
-•	Verificar se o estoque dos produtos vendidos foi atualizado automaticamente.
-
-•	Consultar o histórico de compras do cliente recém-cadastrado.
-
+•	Verificar se o cliente aparece na lista após o cadastro.
 
 
 **Critério(s) de Sucesso(s):**
 
-•	O cadastro do cliente é realizado sem erros.
+•	O formulário de cadastro é localizado e compreendido com facilidade.
 
-•	Os produtos são adicionados ao carrinho corretamente.
+•	Todos os dados são preenchidos corretamente e sem erros de validação.
 
-•	A venda é finalizada com sucesso.
+•	O sistema confirma o cadastro.
 
-•	O estoque é atualizado automaticamente após a conclusão da venda.
-
-•	O histórico de compras do cliente é atualizado com a nova venda.
-
-•	Todo o processo é concluído em menos de 6 minutos.
-
+•	O novo cliente aparece imediatamente na lista de clientes.
 
 
 ## Métodos de coleta de dados
