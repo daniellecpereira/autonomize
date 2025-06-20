@@ -7,9 +7,7 @@
 - Usuário 4: Usuário Comum, possui acesso à internet estável
 - Usuário 5: Usuário Comum, possui acesso à internet estável
 
-## Exemplo de tabela de registro dos testes de usabilidade  
-
-Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
+## Tabela de registro dos testes de usabilidade  
 
 **Cenário 1**: Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema       
 | **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
