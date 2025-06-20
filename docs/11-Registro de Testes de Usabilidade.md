@@ -23,11 +23,11 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 2**: Um usuário precisa verificar a quantidade disponível de um produto específico, registrar a entrada de novas unidades e em seguida uma saída para atender a uma requisição.     
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |     68               |              9                   |      sim           |       0                 |            Satisfeito                  |                     |      
-| Usuário 2   |     71               |               9                  |      sim           |      0                  |       Satisfeito                       |                     |      
-| Usuário 3   |        66            |             9                    |         sim        |      0                  |     Satisfeito                         |                     |  
-| Usuário 4   |     73               |          9                       |      sim           |      0                  |          Satisfeito                    |                     | 
-| Usuário 5   |         109           |          11                       |    sim             |      1                  |        Satisfeito                      |                     | 
+| Usuário 1   |     68               |              9                   |      sim           |       0                 |            Navegação intuitiva/Fácil de usar                  |                     |      
+| Usuário 2   |     71               |               9                  |      sim           |      0                  |       Navegação intuitiva/Fácil de usar                       |                     |      
+| Usuário 3   |        66            |             9                    |         sim        |      0                  |     Navegação intuitiva/Fácil de usar                         |                     |  
+| Usuário 4   |     73               |          9                       |      sim           |      0                  |          Navegação intuitiva/Fácil de usar                    |                     | 
+| Usuário 5   |         80           |          11                       |    sim             |      0                  |        Navegação intuitiva/Fácil de usar                      |                     | 
 
 **Cenário 3**: Um Administrador precisa analisar o desempenho financeiro do mês anterior, verificando receitas, despesas e lucro líquido, além de identificar os produtos mais vendidos em um período específico.   
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
