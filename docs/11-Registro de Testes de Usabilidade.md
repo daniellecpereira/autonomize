@@ -55,28 +55,20 @@
 
 ## Relatório dos testes de usabilidade 
 
-O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
-Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
-Deve incluir: 
-- Taxa de sucesso por cenário
-- Tempo médio para completar cada cenário
-- Número médio de erros cometidos por tarefa
-- Taxa de abandono (usuários que não conseguiram concluir a tarefa do cenário)
-- Feedback qualitativo
-  
-A partir disso, organize os resultados e identifique padrões:
-- Principais dificuldades enfrentadas pelos usuários.
-- Quais tarefas foram concluídas sem problemas e quais apresentaram falhas.
-- Sugestões de melhorias para interface, navegação e acessibilidade.
+### Avaliação
+De modo geral, os participantes demonstraram facilidade em executar todas as tarefas propostas nos testes de usabilidade. A taxa de sucesso foi de 100% em todos os cenários, com tempo médio de execução dentro do esperado e sem ocorrência de erros. Os usuários, tanto administradores quanto usuários comuns, relataram experiência positiva, destacando a navegação intuitiva, clareza das funções e fluidez da plataforma. A interação com o sistema mostrou-se eficiente, com baixa curva de aprendizado e boa resposta dos elementos de interface.
 
-Dica: Agrupe problemas em níveis de prioridade:
-- Crítico: Impede o uso do sistema.
-- Moderado: Dificulta a experiência, mas não impede o uso.
-- Leve: Pode ser melhorado, mas não compromete a usabilidade.
+### Problemas de Usabilidade
+Embora os testes tenham sido bem-sucedidos, algumas sugestões de melhoria foram apontadas durante os testes:
+- Redução do número de cliques no cenário de registro de vendas, a fim de tornar o processo mais ágil;
+- Interface da análise financeira poderia apresentar mais dados visuais, como gráficos, para facilitar a interpretação dos indicadores;
 
-Apresente propostas de ações para corrigir os problemas críticos e recorrentes identificados e proponha melhorias incrementais para otimizar a experiência do usuário.
+###  Plano de Correção
+Com base nas observações, foram definidas as seguintes ações para aprimorar a usabilidade:
+- Otimizar o fluxo de registro de vendas, agrupando etapas.
+- Inserir gráficos visuais no painel de desempenho financeiro, destacando receitas, despesas e lucro em formato de barra ou pizza.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+### Conclusão
+A aplicação apresentou desempenho muito satisfatório em todos os testes realizados. Os usuários conseguiram executar as tarefas com rapidez e precisão, o que reforça a eficiência da navegação e o bom design da interface. Apesar disso, foram levantadas sugestões pontuais que, ao serem implementadas, podem elevar ainda mais a experiência do usuário, especialmente em termos de praticidade e visualização de informações.
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+
