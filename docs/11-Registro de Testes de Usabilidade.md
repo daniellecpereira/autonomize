@@ -1,11 +1,11 @@
 # Registro de Testes de Usabilidade
 
 ## Perfil dos usuários que participaram do teste
-- Usuário 1: Administrador, possui acesso à internet estável, familiaridade avançada com tecnologia
-- Usuário 2: Administrador, possui acesso à internet estável, familiaridade intermediária com tecnologia 
-- Usuário 3: Administrador, possui acesso à internet estável, familiaridade avançada com tecnologia 
-- Usuário 4: Usuário Comum, possui acesso à internet estável, familiaridade avançada com tecnologia
-- Usuário 5: Usuário Comum, possui acesso à internet estável, familiaridade básica com tecnologia
+- Usuário 1: Administrador, possui acesso à internet estável
+- Usuário 2: Administrador, possui acesso à internet estável
+- Usuário 3: Administrador, possui acesso à internet estável
+- Usuário 4: Usuário Comum, possui acesso à internet estável
+- Usuário 5: Usuário Comum, possui acesso à internet estável
 
 ## Exemplo de tabela de registro dos testes de usabilidade  
 
@@ -14,11 +14,11 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 1**: Um novo usuário acessa o sistema pela primeira vez, realiza o cadastro de seu perfil e, posteriormente, atualiza suas informações pessoais no sistema       
 | **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |      50              |                6                 |     sim            |      0                  |      Confiante                        |                     |      
-| Usuário 2    |     56               |              6                   |     sim            |       0                 |      Satisfeito                        |                     |      
-| Usuário 3    |      52              |             6                    |  sim               |     0                   |    Satisfeito                          |                     |  
-| Usuário 4    |      54              |              6                   |   sim              |    0                    |    Neutro                          |                     | 
-| Usuário 5    |      70              |             6                    |      sim           |    0                    |     Satisfeito                          |                     | 
+| Usuário 1    |      50              |                6                 |     sim            |      0                  |      Navegação intuitiva/Fácil de usar                        |                     |      
+| Usuário 2    |     56               |              6                   |     sim            |       0                 |      Navegação intuitiva/Fácil de usar                        |                     |      
+| Usuário 3    |      52              |             6                    |  sim               |     0                   |    Navegação intuitiva/Fácil de usar                          |                     |  
+| Usuário 4    |      54              |              6                   |   sim              |    0                    |    Navegação intuitiva/Fácil de usar                          |                     | 
+| Usuário 5    |      70              |             6                    |      sim           |    0                    |     Navegação intuitiva/Fácil de usar                          |                     | 
 
 **Cenário 2**: Um usuário precisa verificar a quantidade disponível de um produto específico, registrar a entrada de novas unidades e em seguida uma saída para atender a uma requisição.     
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
