@@ -46,14 +46,14 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |      22              |               10                  |    sim             |         0               |     Satisfeito                         |                     | 
 | Usuário 5   |       20             |              9                   |     sim            |          0              |           Satisfeito                   |                     | 
 
-**Cenário 5**:         
+**Cenário 5**:  Avaliar a clareza, fluidez e eficiência da funcionalidade de cadastro de clientes na plataforma, garantindo que usuários consigam registrar novos clientes com facilidade.    
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |          10          |              8                   |         sim        |           0             |        Navegação intuitiva/Fácil de usar                      |                     |      
+| Usuário 2   |     15               |               8                  |      sim           |           0             |      Navegação intuitiva/Fácil de usar                        |                     |      
+| Usuário 3   |         12           |               8                  |     sim            |           0             |          Navegação intuitiva/Fácil de usar                    |                     |  
+| Usuário 4   |            11        |               8                  |     sim            |            0            |          Navegação intuitiva/Fácil de usar                    |                     | 
+| Usuário 5   |          13          |              8                   |     sim            |            0            |        Navegação intuitiva/Fácil de usar                      |                     | 
 
 ## Relatório dos testes de usabilidade 
 
