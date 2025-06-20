@@ -32,19 +32,19 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 3**: Um Administrador precisa analisar o desempenho financeiro do mês anterior, verificando receitas, despesas e lucro líquido, além de identificar os produtos mais vendidos em um período específico.   
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |      4              |          2                       |      sim           |            0            |             Confiante                 |                     |      
-| Usuário 2   |        5            |           2                      |       sim          |              0          |            Confiante                  |                     |
-| Usuário 3   |        5            |           2                      |       sim          |              0          |            Confiante                  |                     |   
+| Usuário 1   |      4              |          2                       |      sim           |            0            |             Satisfeito                 |                     |      
+| Usuário 2   |        5            |           2                      |       sim          |              0          |            Satisfeito                  |                     |
+| Usuário 3   |        5            |           2                      |       sim          |              0          |            Satisfeito                  |                     |   
 
 
-**Cenário 4**:  Um administrador precisa configurar níveis mínimos de estoque para produtos críticos e verificar alertas existentes sobre produtos próximos do vencimento.     
+**Cenário 4**:  Avaliar a facilidade de uso no processo de registro de vendas e a precisão da atualização automática do estoque após a conclusão da transação.     
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |        20            |                  9               |       sim          |           0             |            Satisfeito                  |                     |      
+| Usuário 2   |          32          |                 11                |       sim          |         0               |          Satisfeito                    |                     |      
+| Usuário 3   |        17            |                9                 |        sim         |          0              |          Satisfeito                    |                     |  
+| Usuário 4   |      22              |               10                  |    sim             |         0               |     Satisfeito                         |                     | 
+| Usuário 5   |       20             |              9                   |     sim            |          0              |           Satisfeito                   |                     | 
 
 **Cenário 5**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
