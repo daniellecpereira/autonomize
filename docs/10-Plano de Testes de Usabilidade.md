@@ -144,47 +144,38 @@ Esta escolha está alinhada com o público-alvo da plataforma, que visa oferecer
 •	Todo o processo é concluído em menos de 4 minutos.
 
 
-**Cenário 4: Configuração e Visualização de Alertas**
+**Cenário 4: Registro de Venda e Atualização de Estoque**
 
-**Objetivo:** Avaliar a eficácia dos alertas automáticos para estoque baixo e produtos próximos do vencimento.
+**Objetivo:** Avaliar a facilidade de uso no processo de registro de vendas e a precisão da atualização automática do estoque após a conclusão da transação.
 
-**Contexto:** Um administrador precisa configurar níveis mínimos de estoque para produtos críticos e verificar alertas existentes sobre produtos próximos do vencimento.
+**Contexto:** Usuário realiza a venda de produtos diretamente pelo sistema Autonomize. Após isso, o estoque dos produtos vendidos deve ser automaticamente atualizado.
+
 
 **Tarefa(s):**
 
-•	Acessar o sistema com credenciais de administrador.
+•	Acessar o módulo de vendas.
 
-•	Navegar até a configuração de alertas de estoque.
+•	Selecionar um cliente já cadastrado ou criar um novo.
 
-•	Definir um nível mínimo de 10 unidades para o produto "Toner Impressora XYZ".
+•	Adicionar produtos à venda com quantidades específicas.
 
-•	Salvar a configuração.
+•	Escolher a forma de pagamento.
 
-•	Simular uma redução no estoque para 8 unidades (abaixo do mínimo).
+•	Finalizar a venda.
 
-•	Verificar se o alerta foi gerado corretamente.
-
-•	Navegar até o painel de alertas.
-
-•	Filtrar por "Produtos próximos do vencimento".
-
-•	Visualizar os detalhes de um alerta específico.
-
-•	Marcar o alerta como "visualizado".
+•	Acessar o módulo de estoque para verificar se as quantidades dos produtos foram atualizadas corretamente.
 
 
 
 **Critério(s) de Sucesso(s):**
 
-•	O nível mínimo de estoque é configurado sem dificuldades.
+•	A venda é concluída sem erros ou travamentos.
 
-•	O sistema gera o alerta corretamente quando o estoque fica abaixo do mínimo.
+•	Os produtos são adicionados corretamente à venda.
 
-•	Os alertas são facilmente localizados e filtrados no painel.
+•	O estoque é atualizado de forma automática e precisa.
 
-•	As informações dos alertas são claras e acionáveis.
-
-•	Todo o processo é realizado em menos de 5 minutos.
+•	O usuário compreende o processo sem necessidade de ajuda externa.
 
 
 **Cenário 5: Cadastro de Cliente e Registro de Venda**
