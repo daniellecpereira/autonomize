@@ -1,29 +1,23 @@
 message: Please cite this software using these metadata.
-title:
+title: Autonomize
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Soares Laranjeira Gomes
+    given-names: Barbara 
+  - family-names: Pereira Figueiredo
+    given-names: Bruno 
+  - family-names: Pereira
+    given-names: Danielle Cristina 
+  - family-names: Alves de Oliveira Neto
+    given-names: Levi 
+  - family-names: Barbosa Barros
+    given-names: Victor Emanuel  
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Faria
+    given-names: Claudio 
 keywords:
-  - 
-  - 
-repository-code: 
+  - ERP
+  - Gestão 
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e2-proj-int-t3-autonomize/tree/main
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2025-06-20
