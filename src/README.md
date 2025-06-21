@@ -13,9 +13,9 @@
 ## Logins -
 
 ### Usuário -
-Email - claudio@autonomize.com
-Senha - 12345
+Email - `claudio@autonomize.com` </br>
+Senha - `12345`
 
 ### Admin -
-Email - claudio.admin@autonomize.com
-Senha - admin
+Email - `claudio.admin@autonomize.com` </br>
+Senha - `admin`
