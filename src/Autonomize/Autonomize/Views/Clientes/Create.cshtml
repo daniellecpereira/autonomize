@@ -4,12 +4,11 @@
     ViewData["Title"] = "Criar Cliente";
 }
 
-<h1>Adicionar novo cliente</h1>
-
-<h4>Cliente</h4>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<h1 class="text-center"><strong>Adicionar Cliente</strong></h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row justify-content-center ">
+    <div class="col-md-6 col-lg-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
             <div class="form-group">

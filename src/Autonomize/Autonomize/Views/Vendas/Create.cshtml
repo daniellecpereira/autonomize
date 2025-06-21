@@ -5,10 +5,14 @@
     
 }
 
-<h2>Criar Venda</h2>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<h1 class="text-center"><strong>Adicionar Venda</strong></h1>
 
+<hr />
+<div class="row justify-content-center">
+<div class="col-md-6 col-lg-4">
 <form asp-action="Create">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
     <!-- Campo Cliente -->
     <div class="form-group">
         <label asp-for="ClienteId" class="control-label"></label>
@@ -19,7 +23,7 @@
     <!-- Campo Data -->
     <div class="form-group">
         <label asp-for="Data" class="control-label"></label>
-        <input asp-for="Data" class="form-control" type="text"/>
+        <input asp-for="Data" class="form-control" type="text" placeholder="Insira a Data da Venda"/>
         <span asp-validation-for="Data" class="text-danger"></span>
     </div>
 
@@ -37,28 +41,28 @@
             {
                 <option disabled>Produtos não disponíveis</option>
             }
-        </select>        
+        </select>
             <span asp-validation-for="ProdutoId" class="text-danger"></span>
     </div>
 
     <!-- Campo de Valor (preenchido automaticamente) -->
     <div class="form-group">
         <label for="Valor">Valor</label>
-        <input type="text" id="Valor" name="Valor" class="form-control" readonly />
+        <input type="text" id="Valor" name="Valor" class="form-control read" placeholder="0,00" readonly />
         <span asp-validation-for="Valor" class="text-danger"></span>
     </div>
 
     <!-- Campo Quantidade -->
     <div class="form-group">
         <label asp-for="QuantidadeVenda" class="control-label"></label>
-        <input asp-for="QuantidadeVenda" class="form-control" id="QuantidadeVenda" />
+        <input asp-for="QuantidadeVenda" class="form-control" id="QuantidadeVenda" placeholder="Insira a Quantidade" />
         <span asp-validation-for="QuantidadeVenda" class="text-danger"></span>
     </div>
 
     <!-- Campo Valor Total -->
     <div class="form-group">
         <label for="ValorTotal">Valor Total</label>
-        <input asp-for="Subtotal" id="ValorTotal" class="form-control" readonly />
+        <input asp-for="Subtotal" id="ValorTotal" class="form-control read" placeholder="0,00" readonly />
     </div>
 
     <!-- Campo Tipo de Pagamento -->
@@ -70,12 +74,13 @@
     </div>
 
     <!-- Botões de Submit e Cancelar -->
-    <div class="form-group">
-        <input type="submit" value="Salvar" class="btn btn-primary" />
-        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-    </div>
+     <div class="form-group">
+                <input type="submit" value="Adicionar" class="btn btn-success " />
+                <a asp-action="Index" class="btn btn-danger">Cancelar</a>
+            </div>
 </form>
-
+</div>
+</div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 

@@ -40,15 +40,12 @@
                 <input asp-for="DataFinal" class="form-control" />
                 <span asp-validation-for="DataFinal" class="text-danger"></span>
             </div>
-            <div class="mb-3">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

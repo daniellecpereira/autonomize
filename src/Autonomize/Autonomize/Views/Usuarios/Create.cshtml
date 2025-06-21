@@ -4,31 +4,34 @@
     ViewData["Title"] = "Criar Usuário";
 }
 
-<h2 class="mb-4">Criar Usuário</h2>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<h1 class="text-center"><strong>Cadastro</strong></h1>
 
-<div class="card p-4 shadow-sm mb-4">
+<hr />
+<div class="row justify-content-center ">
+    <div class="col-md-6 col-lg-4">
     <form asp-action="Create">
         <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-        <div class="mb-3">
+        <div class="form-group">
             <label asp-for="NomeUsuario" class="form-label">Nome</label>
-            <input asp-for="NomeUsuario" class="form-control" />
+            <input asp-for="NomeUsuario" class="form-control" placeholder="Cadastre o Nome de Usuário" />
             <span asp-validation-for="NomeUsuario" class="text-danger"></span>
         </div>
 
-        <div class="mb-3">
+        <div class="form-group">
             <label asp-for="EmailUsuario" class="form-label">Email</label>
-            <input asp-for="EmailUsuario" class="form-control" />
+            <input asp-for="EmailUsuario" class="form-control" placeholder="Cadastre o Email"/>
             <span asp-validation-for="EmailUsuario" class="text-danger"></span>
         </div>
 
-        <div class="mb-3">
+        <div class="form-group">
             <label asp-for="Senha" class="form-label">Senha</label>
-            <input asp-for="Senha" class="form-control" type="password" />
+            <input asp-for="Senha" class="form-control" type="password" placeholder="Cadastre a Senha"/>
             <span asp-validation-for="Senha" class="text-danger"></span>
         </div>
 
-        <div class="mb-3">
+        <div class="form-group">
             <label asp-for="TipoUsuario" class="form-label">Perfil</label>
             <select asp-for="TipoUsuario" class="form-select">
                 <option value="">Selecione</option>
@@ -37,12 +40,13 @@
             </select>
             <span asp-validation-for="TipoUsuario" class="text-danger"></span>
         </div>
-
-        <div class="d-flex justify-content-between">
-            <input type="submit" value="Criar" class="btn btn-primary" />
-            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
-        </div>
+    <br/>
+    <div class="form-group">
+                <input type="submit" value="Adicionar" class="btn btn-success " />
+                <a asp-action="Index" class="btn btn-danger">Cancelar</a>
+            </div>
     </form>
+    </div>
 </div>
 
 @section Scripts {
