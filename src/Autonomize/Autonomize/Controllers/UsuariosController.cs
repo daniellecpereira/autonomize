@@ -64,6 +64,22 @@ namespace Autonomize.Controllers {
             return usuario == null ? NotFound() : View(usuario);
         }
 
+        public IActionResult Create_First_User() {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create_First_User([Bind("IDUsuario,NomeUsuario,EmailUsuario,Senha,TipoUsuario")] Usuario usuario) {
+            if (ModelState.IsValid) {
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                _context.Add(usuario);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Login));
+            }
+            return View(usuario);
+        }
+
         public IActionResult Create() {
             return View();
         }

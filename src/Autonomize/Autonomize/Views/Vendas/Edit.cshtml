@@ -4,35 +4,33 @@
     ViewData["Title"] = "Editar Venda";
 }
 
-<h1>Editar</h1>
+<h2 class="mb-4">Editar Venda</h2>
 
-<h4>Venda</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+
+<div class="card p-4 shadow-sm mb-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label asp-for="Cliente" class="control-label"></label>
                 <input asp-for="Cliente" class="form-control" />
                 <span asp-validation-for="Cliente" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label asp-for="Data" class="control-label"></label>
                 <input asp-for="Data" class="form-control" type="date" value="@Model.Data.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="Data" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label asp-for="QuantidadeVenda" class="control-label"></label>
                 <input asp-for="QuantidadeVenda" class="form-control" id="QuantidadeVenda" />
                 <span asp-validation-for="QuantidadeVenda" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label>Valor (R$)</label>
                 <input type="text" id="ValorFormatado" class="form-control" readonly />
             </div>
@@ -40,26 +38,26 @@
             <!-- Valor puro para envio no form -->
             <input type="hidden" asp-for="Valor" id="Valor" />
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label>Valor Total (R$)</label>
                 <input type="text" id="ValorTotal" class="form-control" readonly />
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label asp-for="Tipo" class="control-label"></label>
                 <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoPagamento>()"></select>
                 <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="mb-3">
                 <label asp-for="ProdutoId" class="control-label"></label>
                 <select asp-for="ProdutoId" class="form-control" asp-items="ViewBag.ProdutoId"></select>
                 <span asp-validation-for="ProdutoId" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-primary" /> |
-                <a asp-action="Index">Voltar</a>
+             <div class="d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+            <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>

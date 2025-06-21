@@ -24,7 +24,7 @@
     </dl>
 
     <div class="d-flex justify-content-start gap-2">
-        <a asp-action="Edit" asp-route-id="@Model.IDUsuario" class="btn btn-primary w-25">Editar</a>
-        <a asp-action="Index" class="btn btn-secondary w-25">Voltar</a>
+        <a asp-action="Edit" class="btn btn-azul" asp-route-id="@Model?.IDUsuario">Editar</a> |
+        <a asp-action="Index" class="btn btn-danger">Voltar</a>
     </div>
 </div>

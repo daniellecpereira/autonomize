@@ -9,7 +9,7 @@
     <a asp-action="Create" class="btn btn-primary">+ Novo Cliente</a>
 </div>
 
-@using (Html.BeginForm("DeleteAllConfirmed", "Cliente", FormMethod.Post))
+@using (Html.BeginForm("DeleteAllConfirmed", "Clientes", FormMethod.Post))
 {
     <div id="options-bar" style="display:none">
         <button type="submit" class="btn btn-danger" id="delete-item">Deletar Selecionados</button>
