@@ -184,32 +184,30 @@ namespace Autonomize.Controllers {
             var relatorio = await _context.Relatorios
                 .FirstOrDefaultAsync(m => m.Id == id);
 
-            if (relatorio != null) {
+            if (relatorio == null) {
                 return NotFound();
             }
 
             if (relatorio.TipoRelatorio == TiposRelatorio.Produtos) {
 
                 var produtos = new List<Produto>();
-                var quantidadeTotal = 0;
-                decimal valorTotalVenda;
-                decimal valorTotalCompra;
-                for (int i = 0; i < produtos.Capacity; i++) {
+
+                for (int i = 0; i < relatorio.Itens.Count; i++) {
                     var produto = await _context.Produtos.Where(p => p.Id == relatorio.Itens[i]).FirstOrDefaultAsync();
                     produtos.Add(produto);
                 }
 
-                ViewBag.DetalhesProduto = new {
-                    QuantidadeTotal = quantidadeTotal,
+                ViewBag.DetalhesProdutos = new {
+                    QuantidadeTotal = produtos.Sum(p => p.QuantidadeEstoque),
                     ValorTotalVenda = produtos.Sum(p => p.PrecoVenda),
                     ValorTotalCompra = produtos.Sum(p => p.PrecoCompra)
                 };
 
-
-                return View(produtos);
+                ViewBag.Produtos = produtos;
+                return View(relatorio);
             }
 
-            return View(relatorio);
+            return View();
         }
 
 

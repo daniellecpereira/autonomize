@@ -4,7 +4,6 @@
 @{
     ViewData["Title"] = "Relatório | Produtos";
     var DetalhesProdutos = ViewBag.DetalhesProdutos;
-    var Produtos = Model.Produtos;
 }
 
 
@@ -26,29 +25,25 @@
                 <th scope="col" title="Preço de venda">Preço de Venda</th>
                 <th scope="col" title="Item está ativo ou não.">Ativo</th>
                 <th scope="col" title="Data de Cadastro">Data de Cadastro</th>
-
-
             </tr>
         </thead>
         <tbody>
 
-            @for (int i = 0; i < Produtos.Count; i++)
-            {
-                var prod = Produtos[i];
+            @foreach (var prod in ViewBag.Produtos) {
                 <tr>
                     <th scope="row">@prod.Id </th>
                     <td>@prod.Nome</td>
                     <td>@prod.Descricao</td>
                     <td>@prod.TiposProduto</td>
                     <td>@prod.QuantidadeEstoque</td>
-                    <td>@prod.PrecoCompra </td>
-                    <td>@prod.PrecoVenda</td>
+                    <td>R$@prod.PrecoCompra </td>
+                    <td>R$@prod.PrecoVenda</td>
                     <td>@prod.Ativo</td>
                     <td>@prod.DataCadastro.ToString("dd/MM/yyyy")</td>
                 </tr>
             }
             <tr>
-                <th scope="row" colspan="6">
+                <th scope="row" colspan="8">
                     <p>Quantidade Total de Produtos</p>
                 </th>
                 <td>
@@ -56,15 +51,15 @@
                 </td>
             </tr>
             <tr>
-                <th scope="row" colspan="6">
-                    <p>Preço Total para Venda</p>
+                <th scope="row" colspan="8">
+                    <p>Total Possível Lucro</p>
                 </th>
                 <td>
                     <p><b>R$@DetalhesProdutos.ValorTotalVenda</b></p>
                 </td>
             </tr>
             <tr>
-                <th scope="row" colspan="6">
+                <th scope="row" colspan="8">
                     <p>Despesa Total</p>
                 </th>
                 <td>
