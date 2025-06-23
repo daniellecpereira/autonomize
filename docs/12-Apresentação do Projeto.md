@@ -19,5 +19,9 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 
 ## Conjunto de Slides (Estrutura)
 
-https://github.com/user-attachments/assets/ebd60cd6-6b7b-42e0-bcc6-0f1d18588768
+
+
+
+https://github.com/user-attachments/assets/27981f64-5456-4b6c-b748-776f13fc6a16
+
 
