@@ -63,8 +63,8 @@ namespace Autonomize.Controllers {
             if (ModelState.IsValid) {
                 if (produto != null) {
                     venda.Valor = produto.PrecoVenda;
-                    var novaQuantidade = produto.QuantidadeEstoque - venda.QuantidadeVenda;
-                    produto.QuantidadeEstoque = novaQuantidade;
+                    //var novaQuantidade = produto.QuantidadeEstoque - venda.QuantidadeVenda;
+                    //produto.QuantidadeEstoque = novaQuantidade;
                 } else {
                     ModelState.AddModelError("ProdutoId", "Produto não encontrado.");
                     ViewData["ProdutoId"] = new SelectList(_context.Produtos, "Id", "Nome", venda.ProdutoId);

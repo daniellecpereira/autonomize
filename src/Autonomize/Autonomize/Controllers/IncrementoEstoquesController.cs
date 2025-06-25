@@ -69,7 +69,7 @@ namespace Autonomize.Controllers {
 
             _context.SaveChanges();
 
-            return RedirectToAction("Index", "Produtos");
+            return RedirectToAction("Index", "IncrementoEstoques");
         }
 
         // GET: IncrementoEstoques/Edit/5
